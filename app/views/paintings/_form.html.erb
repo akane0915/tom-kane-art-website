@@ -1,0 +1,17 @@
+<%= form_with(model: painting, local: true) do |form| %>
+  <% if painting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(painting.errors.count, "error") %> prohibited this painting from being saved:</h2>
+
+      <ul>
+      <% painting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
