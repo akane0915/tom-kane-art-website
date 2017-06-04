@@ -2,23 +2,13 @@
 
 <h1>Paintings</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<% @paintings.each do |painting| %>
 
-  <tbody>
-    <% @paintings.each do |painting| %>
-      <tr>
-        <td><%= link_to 'Show', painting %></td>
-        <td><%= link_to 'Edit', edit_painting_path(painting) %></td>
-        <td><%= link_to 'Destroy', painting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <h2><%= link_to "Title: #{painting.title}", painting %></h2>
+  <p><%= "Year: #{painting.year}" %></p>
+  <p><%= "Price: #{painting.price}" %></p>
+
+<% end %>
 
 <br>
 

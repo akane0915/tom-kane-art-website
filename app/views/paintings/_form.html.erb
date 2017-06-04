@@ -11,7 +11,47 @@
     </div>
   <% end %>
 
+  <div class="field form-group">
+    <%= form.label :title %>
+    <%= form.text_field :title, id: :painting_title, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :year %>
+    <%= form.text_field :year, id: :painting_year, class: :"form-control", type: :number %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :painting_description, rows: 6, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :dimensions %>
+    <%= form.text_field :dimensions, id: :painting_dimensions, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :medium %>
+    <%= form.text_field :medium, id: :painting_medium, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :support %>
+    <%= form.text_field :support, id: :painting_support, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :framed %>
+    <%= form.text_field :framed, id: :painting_framed, class: :"form-control" %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :painting_price, class: :"form-control", type: :number %>
+  </div>
+
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: :"btn btn-default" %>
   </div>
 <% end %>
