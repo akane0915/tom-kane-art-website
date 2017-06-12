@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Paintings</h1>
+
+<% @paintings.each do |painting| %>
+
+  <h2><%= link_to "Title: #{painting.title}", painting %></h2>
+  <p><%= "Year: #{painting.year}" %></p>
+  <p><%= "Price: #{painting.price}" %></p>
+
+<% end %>
+
+<br>
