@@ -2,19 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.masthead-image {
-  background-image: image-url('connectivity.jpg');
-  min-height: 900px;
+.jumbotron {
+  background-image: image-url('portland-weather.jpg');
+  height: 900px;
   width: 100%;
   background-size: cover;
 
-  .masthead-text{
+  .masthead-text-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  .masthead-text {
+
   }
 
   h1{
-    letter-spacing: 8px;
+    letter-spacing: 26px;
+    font-size: 10em;
     text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 8px 10px rgba(0,0,0,0.3);
   }
 }
