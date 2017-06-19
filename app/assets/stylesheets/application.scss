@@ -10,9 +10,23 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+<<<<<<< HEAD:app/assets/stylesheets/application.scss
  *= require_self
  *= require_tree .
+=======
+*= require_self
+*= require_tree .
+>>>>>>> ba2ceea3ad13be67157bfd2b530a09114245846e:app/assets/stylesheets/application.scss
  */
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+<<<<<<< HEAD:app/assets/stylesheets/application.scss
+=======
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+>>>>>>> ba2ceea3ad13be67157bfd2b530a09114245846e:app/assets/stylesheets/application.scss
