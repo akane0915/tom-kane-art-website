@@ -8,11 +8,23 @@
 
 <h1>Paintings</h1>
 
-<div class="gallery">
+<ul class="gallery grid effect-2" id="grid">
 
   <% @paintings.each do |painting| %>
     <%= link_to( image_tag("#{painting.image}", alt: "#{painting.title}", :class=>"#{painting.style}"), painting) %>
     <br>
   <% end %>
 
-</div>
+</ul>
+
+<script src="javascripts/masonry.pkgd.min.js"></script>
+<script src="javascripts/imagesloaded.js"></script>
+<script src="javascripts/classie.js"></script>
+<script src="javascripts/AnimOnScroll.js"></script>
+<script>
+  new AnimOnScroll( document.getElementById( 'grid' ), {
+    minDuration : 0.4,
+    maxDuration : 0.7,
+    viewportFactor : 0.2
+  } );
+</script>
