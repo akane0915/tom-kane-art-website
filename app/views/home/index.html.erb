@@ -3,12 +3,7 @@
 <h1>Paintings</h1>
 
 <% @paintings.each do |painting| %>
-
-  <h2><%= link_to "Title: #{painting.title}", painting %></h2>
-  <%= image_tag "#{painting.image}", alt: "#{painting.title}" %>
-  <p><%= "Year: #{painting.year}" %></p>
-  <p><%= "Price: #{painting.price}" %></p>
-
+  <%=link_to( image_tag("#{painting.image}", alt: "#{painting.title}"), painting) %>
 <% end %>
 
 
