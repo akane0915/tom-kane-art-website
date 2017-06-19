@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron {
-  background-image: image-url('portland-weather.jpg');
+  background-image: image-url('portland-weather.png');
   height: 900px;
   width: 100%;
   background-size: cover;
@@ -31,7 +31,7 @@
 }
 
 body {
-  background: gray;
+  // background: gray;
 }
 
 .gallery {
@@ -44,7 +44,7 @@ body {
 
 
 img {
-  border: solid black 5px;
+  // border: solid black 5px;
   width: 100%;
   align-self: center;
   vertical-align: middle;
