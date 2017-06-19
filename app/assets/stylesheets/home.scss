@@ -18,3 +18,40 @@
     text-transform: uppercase;
   }
 }
+
+body {
+  background: gray;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+}
+
+
+
+img {
+  border: solid black 5px;
+  width: 100%;
+  align-self: center;
+  vertical-align: middle;
+}
+
+a {
+  width: 50%;
+  height: auto;
+}
+
+.landscape {
+  width: 100%;
+  height: auto;
+}
+
+.portrait {
+  width: 66%;
+  height:auto;
+  display: block;
+  margin: 0 auto;
+}
