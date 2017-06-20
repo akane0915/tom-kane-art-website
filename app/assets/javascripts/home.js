@@ -16,5 +16,12 @@
            $('#overlay').fadeIn(7000);
         });
 
+
+        $("#arrow").click(function() {
+          $('html, body').animate({
+            scrollTop: $("#grid").offset().top
+          }, 1000);
+        });
+
     });
 })(jQuery);
