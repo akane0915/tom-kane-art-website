@@ -15,5 +15,4 @@
 //= require rails-ujs
 //= require turbolinks
 //= require bootstrap-sprockets
-//= require parallax.min
 //= require_tree .
