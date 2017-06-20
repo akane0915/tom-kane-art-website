@@ -40,17 +40,13 @@
   align-items: center;
 }
 
-// img {
-//   width: 100%;
-//   align-self: center;
-//   vertical-align: middle;
-//   transition: opacity 0.5s ease-out;
-// }
 
 .image-container:hover {
   opacity: 0.7;
   transition: opacity 0.5s ease-out;
 }
+
+
 
 .image-container {
   z-index: 1;
@@ -65,7 +61,7 @@
 }
 
 .black {
-  transition: opacity 0.5s ease-out;
+  // transition: opacity 0.5s ease-out;
   background-color: black !important;
   margin: 40px;
 }
@@ -79,14 +75,17 @@
 .landscape {
   width: 700px;
   height: 500px;
+  transition: opacity 0.5s ease-out;
 }
 
 .portrait {
   height: 700px;
   width: 500px;
+  transition: opacity 0.5s ease-out;
 }
 
 .square {
   height: 600px;
   width: 600px;
+  transition: opacity 0.5s ease-out;
 }
