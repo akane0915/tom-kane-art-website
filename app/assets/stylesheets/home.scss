@@ -4,7 +4,7 @@
 
 .jumbotron {
   // background-image: url("https://c1.staticflickr.com/5/4245/35040805720_3ff5b9f37e_o.png");
-  height: 900px;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
@@ -15,6 +15,10 @@
 
   #overlay {
     display: none;
+  }
+
+  #arrow {
+    width: 200px;
   }
 
   .masthead-text-container {
