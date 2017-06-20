@@ -36,6 +36,12 @@ body {
   opacity: 0.8;
   border-radius: 0;
 
+  #navbar-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   a{
     color: black;
     text-transform: uppercase;
@@ -50,5 +56,6 @@ body {
 
   .nav-link {
     display: inline-block;
+    padding-right: 20px;
   }
 }
