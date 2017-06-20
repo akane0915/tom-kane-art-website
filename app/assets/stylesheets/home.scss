@@ -16,7 +16,9 @@
   }
 
   #arrow {
-    width: 200px;
+    width: 400px;
+    display: block;
+    margin: 0 auto;
   }
 
   .masthead-text-container {
@@ -28,7 +30,7 @@
   }
 
   .masthead-text {
-
+    margin-top: 30%;
   }
 
   h1{
@@ -36,7 +38,7 @@
     font-size: 10vw;
     text-transform: uppercase;
     color: white;
-    text-shadow: 2px 8px 10px rgba(0,0,0,0.3);
+    text-shadow: 2px 8px 10px rgba(0,0,0,0.5);
   }
 }
 
