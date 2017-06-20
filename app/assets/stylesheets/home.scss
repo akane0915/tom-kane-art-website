@@ -3,15 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron {
-  background-image: url("https://c1.staticflickr.com/5/4245/35040805720_3ff5b9f37e_o.png");
-  height: 900px;
+  height: 100vh;
   width: 100%;
   background-size: cover;
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  // min-height: 100%;
+
+  #overlay {
+    display: none;
+  }
+
+  #arrow {
+    width: 20vw;
+    display: block;
+    margin: 0 auto;
+  }
 
   .masthead-text-container {
     height: 100%;
@@ -21,12 +29,16 @@
     align-items: center;
   }
 
+  .masthead-text {
+    margin-top: 30%;
+  }
+
   h1{
     letter-spacing: 30px;
     font-size: 10vw;
     text-transform: uppercase;
     color: white;
-    text-shadow: 2px 8px 10px rgba(0,0,0,0.3);
+    text-shadow: 2px 8px 10px rgba(0,0,0,0.5);
   }
 }
 
