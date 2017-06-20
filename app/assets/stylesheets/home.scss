@@ -7,6 +7,11 @@
   height: 900px;
   width: 100%;
   background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  // min-height: 100%;
 
   .masthead-text-container {
     height: 100%;
@@ -22,7 +27,6 @@
 
   h1{
     letter-spacing: 30px;
-    // font-size: 10em;
     font-size: 10vw;
     text-transform: uppercase;
     color: white;
@@ -30,21 +34,13 @@
   }
 }
 
-body {
-  // background: gray;
-}
-
 .gallery {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
 }
 
-
-
 img {
-  // border: solid black 5px;
   width: 100%;
   align-self: center;
   vertical-align: middle;
