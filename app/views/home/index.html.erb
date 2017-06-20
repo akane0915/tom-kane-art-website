@@ -8,7 +8,7 @@
 
 <p id="notice"><%= notice %></p>
 
-<ul class="gallery grid effect-2" id="grid">
+<div class="gallery grid effect-2" id="grid">
 
   <% @paintings.each do |painting| %>
     <div class="black <%= painting.style %>">
@@ -19,4 +19,4 @@
     </div>
   <% end %>
 
-</ul>
+</div>
