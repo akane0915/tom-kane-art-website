@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .jumbotron {
-  background-image: image-url('portland-weather.png');
+  background-image: url("https://c1.staticflickr.com/5/4245/35040805720_3ff5b9f37e_o.png");
   height: 900px;
   width: 100%;
   background-size: cover;
@@ -46,9 +46,10 @@ img {
   vertical-align: middle;
 }
 
-a {
+.image-container {
   width: 50%;
   height: auto;
+  margin: 40px;
 }
 
 .landscape {
