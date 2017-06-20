@@ -11,8 +11,8 @@
 <ul class="gallery grid effect-2" id="grid">
 
   <% @paintings.each do |painting| %>
-    <div class="image-container">
-      <%= image_tag("#{painting.image}", alt: "#{painting.title}", :class=>"#{painting.style}") %>
+    <div class="image-container <%= painting.style %>">
+      <%= image_tag("#{painting.image}", alt: "#{painting.title}") %>
     </div>
   <% end %>
 
