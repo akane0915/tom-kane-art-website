@@ -9,12 +9,15 @@
 
 <p id="notice"><%= notice %></p>
 
-<ul class="gallery grid effect-2" id="grid">
+<div class="gallery grid effect-2" id="grid">
 
   <% @paintings.each do |painting| %>
-    <div class="image-container <%= painting.style %>">
-      <%= image_tag("#{painting.image}", alt: "#{painting.title}") %>
+    <div class="black <%= painting.style %>">
+      <div class="image-container <%= painting.style %>" style="background-image: url(<%= painting.image %>);">
+
+        <h3 class="painting-center-title"><%= painting.title %></h3>
+      </div>
     </div>
   <% end %>
 
-</ul>
+</div>
