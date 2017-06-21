@@ -1,7 +1,7 @@
 (function($) {
   $(document).ready(function(){
     $(window).scroll(function(){
-      if ($(this).scrollTop() > 300) {
+      if ($(this).scrollTop() > 500) {
         $('#homepage-navbar').fadeIn(500);
       } else {
         $('#homepage-navbar').fadeOut(500);
@@ -29,5 +29,10 @@
     });
 
 
+    $('#toggle').click(function() {
+      $(this).toggleClass('active');
+      $('#overlay-navbar').toggleClass('open');
+
+    });
   });
 })(jQuery);
