@@ -1,3 +1,25 @@
 // Place all the styles related to the about controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#quote{
+  font-size: 2em;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#tom, #quote {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  // border-radius: 30px;
+  margin: 0 0 65px 65px;
+  box-shadow: 1px 7px 85px -6px #777;
+  float:right;
+}
+
+.content-wrap, img {
+  margin-top: 30px;
+}

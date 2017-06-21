@@ -20,18 +20,10 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
-
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-  margin: 0;
-  height: 100%;
-}
-
-
-#body {
-  margin-bottom: 120px;
-}
+// @media screen and (max-height: 100vh) and (min-height: 0vh){
+//   min-height: 100vh;
+//
+// }
 
 // Old Navbar
 
@@ -236,16 +228,31 @@ $button-width: 35px;
 
 // FOOTER
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+}
+
+#body {
+  min-height: 80vh;
+  padding-bottom: 10vh;
+}
+
 .footer {
   position: relative;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
   height: 250px;
   background-color: rgb(48, 48, 48);
   color: white;
-  padding: 55px, 15px, 15px, 15px;
   text-align: center;
-  z-index: 999;
+  z-index: -100;
   margin-top: 30px;
 }
 
