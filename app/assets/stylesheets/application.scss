@@ -14,15 +14,23 @@
  *= require_tree .
  */
 
+@import 'font-awesome-sprockets';
+@import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
 
+html,
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   height: 100%;
+}
+
+
+#body {
+  margin-bottom: 120px;
 }
 
 // Old Navbar
@@ -224,4 +232,42 @@ $button-width: 35px;
     opacity: 1;
     left: 0;
   }
+}
+
+// FOOTER
+
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  height: 250px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  padding: 55px, 15px, 15px, 15px;
+  text-align: center;
+  z-index: 999;
+  margin-top: 30px;
+}
+
+.fa {
+  width: 17%;
+  font-size: 3em;
+  align-items: center;
+  justify-content: space-between;
+  margin: 60px 0 55px 0;
+  z-index: 1000;
+  color: white;
+}
+
+.fa:hover {
+  font-weight: bold;
+}
+
+.footspan {
+  margin: 0 55px 0 55px;
+}
+
+#footer-text {
+  justify-content: center;
+  padding-right: 2%;
 }
