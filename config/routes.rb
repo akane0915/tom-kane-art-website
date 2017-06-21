@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'details/index'
+
+  get 'details/new'
+
   resources :paintings, :about
   
   get 'contact', to: 'messages#new', as: 'new_message'

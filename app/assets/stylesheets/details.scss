@@ -1,0 +1,22 @@
+// Place all the styles related to the details controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+  max-width: 80vw;
+  box-shadow: 1px 7px 85px -6px #777;
+}
+
+.detail-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// @media only screen and (max-width: 480px) {
+//   .img {
+//     height:auto !important;
+//     max-width:600px !important;
+//     width: 100% !important;
+//     }
+//   }
