@@ -1,19 +1,4 @@
-<!-- <nav id="homepage-navbar" class="navbar navbar-default navbar-toggleable-md" role="navigation">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="container-fluid nav-text-container">
-    <div class="navbar-header">
-      <p class="navbar-brand"><%= link_to 'Tom Kane', '/' %></p>
-    </div>
-    <div class="navbar-nav navbar-right nav-link-container collapse navbar-collapse" id="navbarTogglerDemo02">
-      <p class="nav-link"><%= link_to 'Home', '/' %></p>
-      <p class="nav-link"><%= link_to 'About', '/about' %></p>
-      <p class="nav-link"><%= link_to 'Contact', '/contact' %></p>
-    </div>
-  </div>
-</nav> -->
-
+<!-- Old Navbar
 <nav class="navbar navbar-default" id="homepage-navbar">
   <div class="fluid-container" id="navbar-content">
     <div class="navbar-header">
@@ -33,6 +18,23 @@
         <p class="nav-link"><%= link_to 'Contact', '/contact' %></p>
       </ul>
     </div>
+  </div>
+</nav> -->
 
-  </div> <!-- close container div -->
-</nav> <!-- close navbar nav -->
+<div id="homepage-navbar">
+  <div class="button_container" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+
+  <div class="overlay-navbar" id="overlay-navbar">
+    <nav class="overlay-menu">
+      <ul>
+        <li ><a class="nav-link"><%= link_to 'Home', '/' %></a></li>
+        <li><a class="nav-link"><%= link_to 'About', '/about' %></a></li>
+        <li><a class="nav-link"><%= link_to 'Contact', '/contact' %></a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
