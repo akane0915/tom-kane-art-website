@@ -63,6 +63,11 @@
 // }
 
 
+
+
+
+//Navbar
+
 $color-background: #F5F5F5;
 $color-main: #3aa6d9;
 $color-button: #42424a;
@@ -73,7 +78,7 @@ $button-height: 27px;
 $button-width: 35px;
 
 #homepage-navbar {
-  display: none;
+  // display: none;
 }
 
 .button_container {
@@ -224,6 +229,14 @@ $button-width: 35px;
     opacity: 1;
     left: 0;
   }
+}
+
+// HEADER
+
+.header {
+  height: 150px;
+  font-size: 5em;
+  text-align: center;
 }
 
 // FOOTER

@@ -2,13 +2,13 @@
   $(document).ready(function(){
 
     // Navbar display on scroll
-    $(window).scroll(function(){
-      if ($(this).scrollTop() > 500) {
-        $('#homepage-navbar').fadeIn(500);
-      } else {
-        $('#homepage-navbar').fadeOut(500);
-      }
-    });
+    // $(window).scroll(function(){
+    //   if ($(this).scrollTop() > 500) {
+    //     $('#homepage-navbar').fadeIn(500);
+    //   } else {
+    //     $('#homepage-navbar').fadeOut(500);
+    //   }
+    // });
 
     // Jumbotron fade in on load
     $('<img/>').attr('src', 'https://c1.staticflickr.com/5/4245/35040805720_3ff5b9f37e_o.png').on('load', function() {
@@ -33,8 +33,9 @@
       $(this).find(".painting-center-title").fadeOut(300);
     });
 
-    //Navbar Animation to display links
+    // Navbar Animation to display links
     $('#toggle').click(function() {
+      console.log("click");
       $(this).toggleClass('active');
       $('#overlay-navbar').toggleClass('open');
 

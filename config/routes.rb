@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
 
+
   resources :paintings, :about, :privacy_policy
+
+
+  get 'details/index'
+
 
   get 'contact', to: 'messages#new', as: 'new_message'
   post 'contact', to: 'messages#create', as: 'create_message'
