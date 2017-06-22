@@ -56,7 +56,7 @@ If all went well, rails will now make this project available in your browser by 
 
 ###Gallery
 
-![hover](/images/hover2.png)
+![hover](assets/images/hover2.png)
 
 
 
