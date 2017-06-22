@@ -1,6 +1,6 @@
 # TOMKANEART.com
 
-![homepage]('homepage.png')
+![homepage](https://user-images.githubusercontent.com/25161777/27449916-cdb3f0fa-573e-11e7-8750-951b039c1a79.png)
 
 This a website for an artist to display and sell his gallery of paintings for potentials buyers. The artist can upload additional files for listing new paintings and updating existing paintings through an administrative authentication.
 
@@ -37,7 +37,7 @@ Rails will now make this project available in your browser by going to localhost
 
 ## Screenshot
 
-![gallery]('gallery.png')
+![gallery](https://user-images.githubusercontent.com/25161777/27449900-c28dbcba-573e-11e7-9ac5-0b3b539633c6.png)
 
 
 ## Authors
