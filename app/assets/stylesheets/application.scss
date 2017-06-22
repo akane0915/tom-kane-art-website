@@ -20,10 +20,6 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
 
-// @media screen and (max-height: 100vh) and (min-height: 0vh){
-//   min-height: 100vh;
-//
-// }
 
 // Old Navbar
 
@@ -63,6 +59,32 @@
 // }
 
 
+//Header
+.header {
+  // border: 1px solid black;
+  box-shadow: 0px 10px 50px -13px #777;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  // margin-bottom: 5%;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: .9;
+
+  h1{
+    // position: fixed;
+    // padding-top: 3.5%;
+    // padding-left: 3%;
+    margin-left: 5%;
+    padding: 8px;
+    border: 1px solid black;
+  }
+}
+
+.yield-container {
+  padding-top: 18%;
+}
 
 
 
@@ -76,10 +98,6 @@ $color-link: #FFF;
 
 $button-height: 27px;
 $button-width: 35px;
-
-#homepage-navbar {
-  // display: none;
-}
 
 .button_container {
   position: fixed;

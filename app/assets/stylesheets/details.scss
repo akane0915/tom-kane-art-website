@@ -2,18 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.detail-image {
+.detail-image-container {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  max-width: 80vw;
+  align-items: center;
+}
+
+.detail-image {
+  // max-width: 80vw;
+  max-height: 50vw;
   box-shadow: 1px 7px 85px -6px #777;
 }
 
-// @media only screen and (max-width: 480px) {
-//   .img {
-//     height:auto !important;
-//     max-width:600px !important;
-//     width: 100% !important;
-//     }
-//   }
+.painting-details {
+  padding-top: 2vw;
+}

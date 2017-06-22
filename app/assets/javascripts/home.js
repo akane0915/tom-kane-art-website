@@ -1,6 +1,21 @@
 (function($) {
   $(document).ready(function(){
 
+    let currentPath = window.location.pathname;
+
+    let detailPageLoad = function() {
+      let img = $("img")[0];
+      let imgSource = $("img")[0].currentSrc;
+      $('<img/>').attr('src', imgSource).on('load', function() {
+        $(this).remove();
+        $('.detail-image').hide().fadeIn(3000);
+        $('.painting-details').hide().fadeIn(3000);
+      });
+    }
+
+    if (currentPath === "/details/index") { detailPageLoad() }
+
+
     // Navbar display on scroll
     // $(window).scroll(function(){
     //   if ($(this).scrollTop() > 500) {
@@ -16,6 +31,7 @@
       $('.jumbotron').css('background-image', 'url(https://c1.staticflickr.com/5/4245/35040805720_3ff5b9f37e_o.png)').hide().fadeIn(3000);
       //Jumbotron text fade in on load
       $('#overlay').fadeIn(5000);
+      $('#arrow').hide().fadeIn(5000);
     });
 
     //Jumbotron arrow scroll on click
@@ -35,7 +51,6 @@
 
     // Navbar Animation to display links
     $('#toggle').click(function() {
-      console.log("click");
       $(this).toggleClass('active');
       $('#overlay-navbar').toggleClass('open');
 

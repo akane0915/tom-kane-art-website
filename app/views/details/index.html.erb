@@ -1,14 +1,12 @@
-<div class="header">Tom Kane</div>
+<% painting = @paintings[1] %>
 
-<% painting = @paintings[0] %>
-
-<div class="detail-image">
-  <%= image_tag(painting.image) %>
+<div class="detail-image-container">
+  <%= image_tag(painting.image, :class => "detail-image") %>
 </div>
 
-<div class="painting-details">
+<div class="container painting-details">
   <h1><%= painting.title %></h1>
   <h3><%= painting.dimensions %></h3>
   <h3><%= "#{painting.medium} on #{painting.support}" %></h3>
-  <h3><%= number_to_currency(painting.price) %></h3>
+  <h3><%= painting.price == 0 ? "Not for Sale" : number_to_currency(painting.price) %></h3>
 </div>
