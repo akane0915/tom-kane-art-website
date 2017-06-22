@@ -16,14 +16,17 @@
   }
 
   #arrow {
-    width: 20vw;
+
     display: block;
+    position: absolute;
+    bottom: 1vw;
+    width: 20vw;
     margin: 0 auto;
   }
 
   #arrow:hover {
     cursor: pointer;
-    
+
   }
 
   .masthead-text-container {
@@ -34,9 +37,6 @@
     align-items: center;
   }
 
-  .masthead-text {
-    margin-top: 30%;
-  }
 
   h1{
     letter-spacing: 30px;
