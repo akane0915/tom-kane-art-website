@@ -1,6 +1,8 @@
 (function($) {
   $(document).ready(function(){
 
+    let currentPath = window.location.pathname;
+
     let detailPageLoad = function() {
       let img = $("img")[0];
       let imgSource = $("img")[0].currentSrc;
@@ -11,7 +13,8 @@
       });
     }
 
-    detailPageLoad()
+    if (currentPath === "/details/index") { detailPageLoad() }
+
 
     // Navbar display on scroll
     // $(window).scroll(function(){
@@ -48,7 +51,6 @@
 
     // Navbar Animation to display links
     $('#toggle').click(function() {
-      console.log("click");
       $(this).toggleClass('active');
       $('#overlay-navbar').toggleClass('open');
 
