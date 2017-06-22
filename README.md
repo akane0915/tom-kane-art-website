@@ -55,17 +55,27 @@ If all went well, rails will now make this project available in your browser by 
 
 ## Authors
 
-Grady Shelton
-Jennifer Kinsey
-Asia Kane
-Spencer Alan
+* Grady Shelton
+* Jennifer Kinsey
+* Asia Kane
+* Spencer Alan
 
+### Technologies Used
+
+* Ruby
+* Bundler
+* Postgres
+* Rails
+* Javascript (ES6)
+* Jquery 3
+* HTML5
+* SASS
 
 ## License
 
 MIT License
 
-Copyright (c) Grady Shelton, Jennifer Kinsey, Asia Kane, Spencer Alan
+Copyright (c) 2017 Grady Shelton, Jennifer Kinsey, Asia Kane, Spencer Alan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
