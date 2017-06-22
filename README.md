@@ -57,7 +57,8 @@ If all went well, rails will now make this project available in your browser by 
 ### Hover
 
 
-![hover](assets/images/hover2.png)
+![hover2](https://user-images.githubusercontent.com/25161777/27460543-434c9bee-5769-11e7-9732-b0df013157e4.png)
+
 
 
 
