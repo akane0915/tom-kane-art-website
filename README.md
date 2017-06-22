@@ -50,13 +50,13 @@ If all went well, rails will now make this project available in your browser by 
 
 ## Screenshots
 
-###Gallery
+### Gallery
 
 ![gallery](https://user-images.githubusercontent.com/25161777/27449900-c28dbcba-573e-11e7-9ac5-0b3b539633c6.png)
 
-###Gallery
+### Hover
 
-![hover](images/hover2.png)
+![hover](/images/hover2.png)
 
 
 
