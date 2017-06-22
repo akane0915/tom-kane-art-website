@@ -1,6 +1,18 @@
 (function($) {
   $(document).ready(function(){
 
+    let detailPageLoad = function() {
+      let img = $("img")[0];
+      let imgSource = $("img")[0].currentSrc;
+      $('<img/>').attr('src', imgSource).on('load', function() {
+        $(this).remove();
+        $('.detail-image').hide().fadeIn(3000);
+        $('.painting-details').hide().fadeIn(3000);
+      });
+    }
+
+    detailPageLoad()
+
     // Navbar display on scroll
     // $(window).scroll(function(){
     //   if ($(this).scrollTop() > 500) {
