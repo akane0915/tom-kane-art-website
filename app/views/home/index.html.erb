@@ -1,23 +1,25 @@
-<div class="jumbotron">
-  <div class="masthead-text-container">
-    <div id="overlay" class="masthead-text">
-      <h1>Tom Kane</h1>
-      <%= image_tag("down-arrow.png", :id => "arrow")%>>
-    </div>
-  </div>
-</div>
-
-<p id="notice"><%= notice %></p>
-
-<div class="gallery grid effect-2" id="grid">
-
-  <% @paintings.each do |painting| %>
-    <div class="black <%= painting.style %> slideanim">
-      <div class="image-container <%= painting.style %>" style="background-image: url(<%= painting.image %>);">
-
-        <h3 class="painting-center-title"><%= painting.title %></h3>
+<div id="home-page">
+  <div class="jumbotron">
+    <div class="masthead-text-container">
+      <div id="overlay" class="masthead-text">
+        <h1>Tom Kane</h1>
+        <%= image_tag("down-arrow.png", :id => "arrow")%>
       </div>
     </div>
-  <% end %>
+  </div>
 
+  <p id="notice"><%= notice %></p>
+
+  <div class="gallery grid effect-2" id="grid">
+
+    <% @paintings.each do |painting| %>
+      <div class="black <%= painting.style %> slideanim">
+        <div class="image-container <%= painting.style %>" style="background-image: url(<%= painting.image %>);">
+
+          <h3 class="painting-center-title"><%= painting.title %></h3>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
 </div>

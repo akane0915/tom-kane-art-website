@@ -18,8 +18,7 @@
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Raleway:200');
-
+@import url('https://fonts.googleapis.com/css?family=Raleway:200, 400,600');
 // @media screen and (max-height: 100vh) and (min-height: 0vh){
 //   min-height: 100vh;
 //
@@ -63,6 +62,25 @@
 // }
 
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  background: #F5F5F5;
+}
+
+#body {
+  min-height: 80vh;
+  padding-bottom: 10vh;
+}
+
+
+
 
 
 
@@ -83,7 +101,7 @@ $button-width: 35px;
 
 .button_container {
   position: fixed;
-  top: 5%;
+  top: 3%;
   right: 2%;
   height: $button-height;
   width: $button-width;
@@ -239,23 +257,33 @@ $button-width: 35px;
   text-align: center;
 }
 
+// OTHER JUMBO
+
+#small-jumbo h2{
+  color: #42424a;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding-bottom: 3vh;
+  margin-top: 0;
+}
+
+#small-jumbo a, #small-jumbo a:hover{
+  color: #42424a;
+  text-decoration: none;
+}
+
+#small-jumbo.jumbotron {
+  background-attachment: fixed;
+  position: fixed;
+  width: 100%;
+  background-size: cover;
+  height: 8vh;
+  // margin-bottom: 20vh;
+}
+
 // FOOTER
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html,
-body {
-  font-family: 'Raleway', sans-serif;
-  height: 100%;
-}
-
-#body {
-  min-height: 80vh;
-  padding-bottom: 10vh;
-}
 
 .footer {
   position: relative;

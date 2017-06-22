@@ -12,6 +12,7 @@
     <div id="body">
 
       <%= render 'shared/navigation' %>
+      <%= render 'shared/header' unless request.env['PATH_INFO']=='/' %>
 
       <div id="yield">
         <%= yield %>
