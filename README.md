@@ -23,17 +23,30 @@ In a new terminal window, start postgres in the background:
 ```
 $ postgres
 ```
+Ensure you are using Ruby 2.4.1 by typing:
+```
+$ ruby -v
+```
+
+If you are not running version 2.4.1 please look into a Ruby version manager. We suggest RVM or Chruby.
 
 Navigate to this project directory in the terminal. Then type:
+
 ```
-rails db:setup
+$ bundle install
 ```
 
-In a new terminal tab, start the sinatra server by typing:
+After the gems are installed set up the database:
+
 ```
-rails server
+$ bundle exec rails db:setup
 ```
-Rails will now make this project available in your browser by going to localhost:3000.
+
+To run the app:
+```
+$ bundle exec rails server
+```
+If all went well, rails will now make this project available in your browser by going to localhost:3000.
 
 ## Screenshot
 
@@ -42,17 +55,27 @@ Rails will now make this project available in your browser by going to localhost
 
 ## Authors
 
-Grady Shelton
-Jennifer Kinsey
-Asia Kane
-Spencer Alan
+* Grady Shelton
+* Jennifer Kinsey
+* Asia Kane
+* Spencer Alan
 
+### Technologies Used
+
+* Ruby
+* Bundler
+* Postgres
+* Rails
+* Javascript (ES6)
+* Jquery 3
+* HTML5
+* SASS
 
 ## License
 
 MIT License
 
-Copyright (c) Grady Shelton, Jennifer Kinsey, Asia Kane, Spencer Alan
+Copyright (c) 2017 Grady Shelton, Jennifer Kinsey, Asia Kane, Spencer Alan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
