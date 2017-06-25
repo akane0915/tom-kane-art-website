@@ -4,6 +4,9 @@
 
 This a website for an artist to display and sell his gallery of paintings for potentials buyers. The artist can upload additional files for listing new paintings and updating existing paintings through an administrative authentication.
 
+### Statement of Work
+https://docs.google.com/document/d/1LYGByq_7UnubV5P1nPozUEuvJ8nnUu866HmxlpSJT9s/edit?ts=5948677c
+
 ### Prerequisites
 
 Web browser with ES6 compatibility

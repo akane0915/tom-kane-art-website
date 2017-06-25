@@ -1,10 +1,17 @@
 (function($) {
   $(document).ready(function(){
     $('#arrow').hide()
+
     $('#toggle').click(function() {
       $(this).toggleClass('active');
       $('#overlay-navbar').toggleClass('open');
+
     });
+    // $('#nav-gallery').hover(function() {
+    //   $('#overlay-navbar').addClass('green');
+    // }, function() {
+    //   $('#overlay-navbar').removeClass('green');
+    // });
 
     let currentPath = window.location.pathname;
 
