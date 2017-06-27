@@ -12,12 +12,14 @@
 <div class="gallery grid effect-2" id="grid">
 
   <% @paintings.each do |painting| %>
-    <div class="black <%= painting.style %> slideanim">
-      <div class="image-container <%= painting.style %>" style="background-image: url(<%= painting.image %>);">
+    <%= link_to detail_path(painting.slug) do%>
+      <div class="black <%= painting.style %> slideanim">
+        <div class="image-container <%= painting.style %>" style="background-image: url(<%= painting.image %>);">
 
-        <h3 class="painting-center-title"><%= painting.title %></h3>
+          <h3 class="painting-center-title"><%= painting.title %></h3>
+        </div>
       </div>
-    </div>
+    <% end %>
   <% end %>
 
 </div>
