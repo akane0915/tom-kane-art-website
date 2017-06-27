@@ -3,9 +3,10 @@ namespace :slug do
   task slugify: :environment do
     Painting.find_each do |painting|
       downcase = painting.title.downcase
-      # [^a-z 0-9]+ means to remove anything that isnt alphanumeric or a space
-      clean = downcase.gsub(/[^a-z 0-9]+/, "")
-      slug = clean.gsub(/\s/, "_")
+      clean = downcase.gsub(/ - /, "_")
+      # [^a-z 0-9_]+ means to remove anything that isnt alphanumeric or a space
+      extra_clean = clean.gsub(/[^a-z 0-9_]+/, "")
+      slug = extra_clean.gsub(/\s/, "_")
       painting.slug = slug
       painting.save
     end
