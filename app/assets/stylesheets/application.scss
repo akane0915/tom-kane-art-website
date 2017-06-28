@@ -38,6 +38,15 @@
     padding: 8px;
     border: 1px solid black;
   }
+
+  #header_link {
+    color: rgb(51, 51, 51);
+
+    &:hover {
+      text-decoration: none;
+      font-weight: bolder;
+    }
+  }
 }
 
 .yield-container {
