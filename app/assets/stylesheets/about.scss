@@ -2,13 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#quote{
-  font-size: 2em;
-  font-family: 'Open Sans Condensed', sans-serif;
+#about-page h1 {
+  margin-top: 0;
 }
 
-#tom, #quote {
+.quote-section {
   text-align: center;
+  margin: 50px 0 70px 0;
+  font-weight: bolder;
+}
+#quote{
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: .1em;
+}
+
+#tom {
+  font-size: 1.2em;
 }
 
 #about-image {
@@ -22,4 +32,15 @@
 
 .content-wrap, {
   margin: 30px 80px 0 80px;
+}
+
+.content-text {
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+
+@media only screen and (max-width : 1024px) {
+  .content-text {
+    font-size: 1.8em;
+  }
 }

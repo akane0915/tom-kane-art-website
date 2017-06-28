@@ -5,3 +5,19 @@
 #privacy-policy h4 {
   padding-top: 15px;
 }
+
+.content-text {
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+
+@media only screen and (max-width : 1024px) {
+  .content-text {
+    p {
+    font-size: 1.4em;
+    }
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+}
