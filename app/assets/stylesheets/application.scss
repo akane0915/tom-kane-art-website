@@ -27,7 +27,7 @@
   justify-content: flex-start;
   position: fixed;
   width: 100%;
-  background-color: white;
+  background-color: #fcfcfc;
   opacity: .9;
   height: 150px;
   font-size: 5em;
@@ -50,9 +50,8 @@
 }
 
 .yield-container {
-  padding-top: 18%;
+  padding-top: 25vw;
 }
-
 
 // Navbar
 $color-background: #F5F5F5;
@@ -277,4 +276,24 @@ body {
 #footer-text {
   justify-content: center;
   padding-right: 2%;
+}
+
+
+
+@media (min-width: 1200px) {
+  .yield-container {
+    padding-top: 16vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .yield-container {
+    padding-top: 12vw;
+  }
+}
+
+@media (min-width: 2000px) {
+  .yield-container {
+    padding-top: 8vw;
+  }
 }
