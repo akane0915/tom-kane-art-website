@@ -51,6 +51,10 @@ $ bundle exec rails server
 ```
 If all went well, rails will now make this project available in your browser by going to localhost:3000.
 
+### Testing
+
+This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, and Shoulda-Matchers. 
+
 ## Screenshots
 
 ### Gallery
@@ -59,11 +63,7 @@ If all went well, rails will now make this project available in your browser by 
 
 ### Hover
 
-
 ![hover2](https://user-images.githubusercontent.com/25161777/27460543-434c9bee-5769-11e7-9732-b0df013157e4.png)
-
-
-
 
 ## Authors
 
@@ -75,9 +75,10 @@ If all went well, rails will now make this project available in your browser by 
 ### Technologies Used
 
 * Ruby
+* Rails
 * Bundler
 * Postgres
-* Rails
+* RSpec
 * Javascript (ES6)
 * Jquery 3
 * HTML5
