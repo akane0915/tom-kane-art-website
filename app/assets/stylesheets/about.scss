@@ -33,3 +33,14 @@
 .content-wrap, {
   margin: 30px 80px 0 80px;
 }
+
+.content-text {
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+
+@media only screen and (max-width : 1024px) {
+  .content-text {
+    font-size: 1.8em;
+  }
+}
