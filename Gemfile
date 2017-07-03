@@ -34,6 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-sass',  '~> 4.7.0'
 gem 'autoprefixer-rails'
 gem 'paperclip', '~> 5.0.0'
+gem 'devise'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

@@ -1,5 +1,6 @@
 class PaintingsController < ApplicationController
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!
 
   # GET /paintings
   # GET /paintings.json

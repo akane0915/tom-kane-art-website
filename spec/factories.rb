@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :admin do
+    
+  end
   factory :painting do
     title 'Cherry Blossoms With Wind'
     description 'Frame Optional'
