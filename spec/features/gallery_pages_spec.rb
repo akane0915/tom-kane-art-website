@@ -2,18 +2,7 @@ require 'rails_helper'
 
 describe "navigation from the Home page" do
   it "navigates to painting details page" do
-    test_painting = Painting.create(
-      title: 'Cherry Blossoms With Wind',
-      description: 'Frame Optional',
-      year: '2017',
-      dimensions: '11 x 14 inches',
-      medium: 'Acrylic',
-      support: 'Canvas',
-      framed: false,
-      price: '1500',
-      image: 'https://images-na.ssl-images-amazon.com/images/I/31Dy9-24ulL._SY355_.jpg',
-      style: 'landscape'
-      )
+    test_painting = FactoryGirl.create(:painting)
     visit home_path
     click_link("#{test_painting.title}")
     expect(page).to have_content "#{test_painting.title}"
