@@ -7,7 +7,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 require 'rspec/rails'
 require 'capybara/rails'
 require 'factory_girl'
-require 'simplecov'
+
 # Add additional requires below this line. Rails is not loaded until this point!
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
@@ -69,18 +69,4 @@ end
 # Factory Girl
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
-end
-
-# Simple Cov - Testing Coverage
-SimpleCov.start
-
-RSpec.configure do |config|
-
-  config.expect_with :rspec do |expectations|
-    expectations.include_chain_clauses_in_custom_matcher_descriptions = true
-  end
-
-  config.mock_with :rspec do |mocks|
-    mocks.verify_partial_doubles = true
-  end
 end
