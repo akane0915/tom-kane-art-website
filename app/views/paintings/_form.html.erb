@@ -44,12 +44,17 @@
   <div class="field form-group">
     <% #framed is a boolean and form needs to be changed to a boolean or dropdown %>
     <%= form.label :framed %>
-    <%= form.text_field :framed, id: :painting_framed, class: :"form-control" %>
+    <%= form.select :framed, options_for_select(['No', 'Yes'], [false, true]) %>
   </div>
 
   <div class="field form-group">
     <%= form.label :price %>
     <%= form.text_field :price, id: :painting_price, class: :"form-control", type: :number %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :style %>
+    <%= form.select :style, options_for_select([['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
   </div>
 
   <div class="actions">
