@@ -1,5 +1,6 @@
 class PaintingsController < ApplicationController
   before_action :set_painting, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_admin!
 
   # GET /paintings
   # GET /paintings.json
@@ -25,6 +26,7 @@ class PaintingsController < ApplicationController
   # POST /paintings.json
   def create
     @painting = Painting.new(painting_params)
+    binding.pry
 
     respond_to do |format|
       if @painting.save
@@ -69,6 +71,6 @@ class PaintingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def painting_params
-      params.require(:painting).permit(:title, :description, :year, :dimensions, :medium, :support, :framed, :price, :image)
+      params.require(:painting).permit(:title, :description, :year, :dimensions, :medium, :support, :framed, :price, :image, :style)
     end
 end
