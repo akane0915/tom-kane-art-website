@@ -13,6 +13,7 @@ Web browser with ES6 compatibility
 Examples: Chrome, Safari
 
 * Ruby 2.4.1
+* Rails 5.1.1
 * Bundler
 
 ### Installing
@@ -53,7 +54,13 @@ If all went well, rails will now make this project available in your browser by 
 
 ### Testing
 
-This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, and Shoulda-Matchers. 
+This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, Shoulda-Matchers, Factory Girl, and Simple Cov. In your termainl run:
+
+```
+$ bundle exec rails db:test:prepare
+```
+$ rspec
+```
 
 ## Screenshots
 
@@ -83,6 +90,10 @@ This application includes both Unit and User Integration testing.  It primarily 
 * Jquery 3
 * HTML5
 * SASS
+
+### Authentication
+
+This application uses the Devise Gem for User Authentication.
 
 ## License
 
