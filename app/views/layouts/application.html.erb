@@ -39,7 +39,7 @@
               <p>
                 User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %>
               </p>
-            <% else %>
+            <% elsif request.env['PATH_INFO'] == "/admins/sign_in" %>
               <%= link_to "Sign up", new_admin_registration_path %> | <%= link_to "Sign in", new_admin_session_path %> | <%= link_to "Paintings", paintings_path %>
             <% end %>
 
