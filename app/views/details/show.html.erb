@@ -16,8 +16,6 @@
       <%= f.submit "Add to cart" %>
     <% end %>
   <% else %>
-    <p>
-      This item is in your <%= link_to 'cart', cart_path %>.
-    </p>
+    <p>This item is in your <%= link_to 'cart', cart_path %>.</p>
   <% end %>
 </div>
