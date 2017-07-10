@@ -1,0 +1,20 @@
+<h1>Your Cart</h1>
+<% if @order_items.any? %>
+
+  <% @order_items.each do |item| %>
+    <hr>
+    <h3><%= item.painting.title %></h3>
+    <h3>
+      <%= number_to_currency(item.painting.price) %>
+      <%= link_to "Remove", order_item_path(item), method: :delete, class: "btn btn-default"%>
+    </h3>
+  <% end %>
+  <h3>Your total comes to<h3>
+  <h3><%= number_to_currency(@order.total_price) %></h3>
+
+<% else %>
+  <h4>Your shopping cart is empty.</h4>
+<% end %>
+
+<hr>
+<%= link_to "Back to Gallery", home_path, class: "btn btn-default btn-lrg"%>

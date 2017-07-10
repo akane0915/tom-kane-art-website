@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :paintings
   resources :privacy_policy, :about, only: [:index]
   resources :details, only: [:show]
+  resource :cart, only: [:show]
   resources :order_items
 
   # consider resource when reworking
