@@ -8,7 +8,7 @@
 <p>Framed: <%= @painting.framed %></p>
 <p>Dimensions: <%= @painting.dimensions %></p>
 <p>Year: <%= @painting.year %></p>
-<p>Price: <%= @painting.price %></p>
+<p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
 <p>Style: <%= @painting.style %></p>
 <p>Image: <%= @painting.image %></p>
 

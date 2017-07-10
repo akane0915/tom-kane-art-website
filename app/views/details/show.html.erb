@@ -8,3 +8,9 @@
   <h3><%= "#{@painting.medium} on #{@painting.support}" %></h3>
   <h3><%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></h3>
 </div>
+
+
+ <p><%= form_for @order_item do |f| %>
+   <%= f.hidden_field :painting_id, value: @painting.id %>
+   <%= f.submit "Add to cart" %>
+ <% end %></p>

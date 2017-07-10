@@ -4,9 +4,10 @@
 
 <% @paintings.each do |painting| %>
 
-  <h2><%= link_to "Title: #{painting.title}", painting %></h2>
+  <h2><%= link_to "#{painting.title}", painting %></h2>
   <p><%= "Year: #{painting.year}" %></p>
-  <p><%= "Price: #{painting.price}" %></p>
+  <p>Price: <%= painting.price == 0 ? "Not for Sale" : number_to_currency(painting.price) %></p>
+
 
 <% end %>
 
