@@ -35,6 +35,7 @@ gem 'font-awesome-sass',  '~> 4.7.0'
 gem 'autoprefixer-rails'
 gem 'paperclip', '~> 5.0.0'
 gem 'devise'
+gem 'stripe'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -51,6 +52,7 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem "factory_girl_rails", "~> 4.0"
   gem 'simplecov', require: false
+  gem 'dotenv-rails'
 end
 
 group :development do
