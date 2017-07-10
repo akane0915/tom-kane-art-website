@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :details, only: [:show]
   resource :cart, only: [:show]
   resources :order_items
-  resources :charges
+  resources :charges, only: [:new, :create]
 
   # consider resource when reworking
   get 'contact', to: 'messages#new', as: 'new_message'
