@@ -23,7 +23,6 @@
               User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %>
             </p>
           <% end %>
-
           <%= yield %>
         </div>
 
