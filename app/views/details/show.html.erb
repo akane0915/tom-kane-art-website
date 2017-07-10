@@ -6,11 +6,18 @@
   <h1><%= @painting.title %></h1>
   <h3><%= @painting.dimensions %></h3>
   <h3><%= "#{@painting.medium} on #{@painting.support}" %></h3>
-  <h3><%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></h3>
+
+  <% if @painting.price == 0 %>
+    <h3>Not for Sale</h3>
+  <% elsif @painting.order_items.length == 0 %>
+    <h3><%= number_to_currency(@painting.price) %></h3>
+    <%= form_for @order_item do |f| %>
+      <%= f.hidden_field :painting_id, value: @painting.id %>
+      <%= f.submit "Add to cart" %>
+    <% end %>
+  <% else %>
+    <p>
+      This item is in your <%= link_to 'cart', cart_path %>.
+    </p>
+  <% end %>
 </div>
-
-
- <p><%= form_for @order_item do |f| %>
-   <%= f.hidden_field :painting_id, value: @painting.id %>
-   <%= f.submit "Add to cart" %>
- <% end %></p>

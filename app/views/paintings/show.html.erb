@@ -1,17 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h2>Title: <%= @painting.title %></h2>
-<p>Description: <%= @painting.description %></p>
-<p>Year: <%= @painting.year %></p>
-<p>Medium: <%= @painting.medium %></p>
-<p>Support: <%= @painting.support %></p>
-<p>Framed: <%= @painting.framed %></p>
-<p>Dimensions: <%= @painting.dimensions %></p>
-<p>Year: <%= @painting.year %></p>
-<p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
-<p>Style: <%= @painting.style %></p>
-<p>Image: <%= @painting.image %></p>
+  <h2>Title: <%= @painting.title %></h2>
+  <p>Description: <%= @painting.description %></p>
+  <p>Year: <%= @painting.year %></p>
+  <p>Medium: <%= @painting.medium %></p>
+  <p>Support: <%= @painting.support %></p>
+  <p>Framed: <%= @painting.framed %></p>
+  <p>Dimensions: <%= @painting.dimensions %></p>
+  <p>Year: <%= @painting.year %></p>
+  <p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
+  <p>Style: <%= @painting.style %></p>
+  <p>Image: <%= @painting.image %></p>
 
-<%= link_to 'Edit', edit_painting_path(@painting) %> |
-<%= link_to 'Delete', @painting, method: :delete, data: { confirm: 'Are you sure?' } %> |
-<%= link_to 'Back', paintings_path %>
+  <%= link_to 'Edit', edit_painting_path(@painting) %> |
+  <%= link_to 'Delete', @painting, method: :delete, data: { confirm: 'Are you sure?' } %> |
+  <%= link_to 'Back', paintings_path %>
+</div>

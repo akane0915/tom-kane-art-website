@@ -1,10 +1,12 @@
-<% if @order_items.any? %>
-  <% @order_items.each do |item| %>
-    <p><%= item.painting.title %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "Remove from cart?", :method => "delete"} %></p>
-    <p> Unit Price: <%= number_to_currency item.painting.price %>  Total Price: <%= number_to_currency (item.painting.price) %></p>
+<div class="container">
+  <% if @order_items.any? %>
+    <% @order_items.each do |item| %>
+      <p><%= item.painting.title %> | <%= link_to "Delete", order_item_path(item), :data => {:confirm => "Remove from cart?", :method => "delete"} %></p>
+      <p> Price: <%= number_to_currency item.painting.price %> </p>
+    <% end %>
+  <hr>
+    <p>Your Total: <%= number_to_currency current_order.total_price %></p>
+  <% else %>
+    <p>Your shopping cart is empty.</p>
   <% end %>
-<hr>  
-  <p>Your Total: <%= number_to_currency current_order.total_price %></p>
-<% else %>
-  <p>Your shopping cart is empty.</p>
-<% end %>
+</div>
