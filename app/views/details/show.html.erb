@@ -7,4 +7,11 @@
   <h3><%= @painting.dimensions %></h3>
   <h3><%= "#{@painting.medium} on #{@painting.support}" %></h3>
   <h3><%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></h3>
+
+    <%= form_for @order_item do |f| %>
+      <%= f.hidden_field :painting_id, value: @painting.id %>
+      <%= f.submit "Add To Cart", class: "btn btn-default btn-lg" %>
+    <% end %>
+
+
 </div>
