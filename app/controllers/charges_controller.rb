@@ -7,7 +7,7 @@ class ChargesController < ApplicationController
 
   def create
     customer = StripeTool.create_customer(
-      email: params[:stripeEmail],
+      email: params[:email],
       stripe_token: params[:stripeToken]
     )
 
@@ -33,5 +33,9 @@ private
 
   def set_description
     @description = "Some amazing product"
+  end
+
+  def charge_params
+    params.require(:charges).permit(:name, :phone, :email)
   end
 end
