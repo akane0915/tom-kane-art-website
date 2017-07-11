@@ -52,8 +52,6 @@ class PaintingsController < ApplicationController
     end
   end
 
-  # DELETE /paintings/1
-  # DELETE /paintings/1.json
   def destroy
     @painting.destroy
     respond_to do |format|

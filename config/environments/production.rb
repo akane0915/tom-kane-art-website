@@ -10,6 +10,10 @@ Rails.application.configure do
     }
   }
 
+  :s3_permissions => {
+    :original => :private
+  }
+
 
   # Code is not reloaded between requests.
   config.cache_classes = true
