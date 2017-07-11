@@ -29,6 +29,13 @@ Rails.application.configure do
   #Paperclip config
   Paperclip.options[:command_path] = "/usr/local/bin/"
 
+  # Paperclip S3 config
+  config.paperclip_defaults = {
+    :storage => :s3,
+    # :s3_host_name => 'REMOVE_THIS_LINE_IF_UNNECESSARY',
+    :bucket => 'tom-kane-art-bucket'
+  }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 

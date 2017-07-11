@@ -75,5 +75,4 @@ ActiveRecord::Schema.define(version: 20170711173027) do
     t.integer "pclip_image_file_size"
     t.datetime "pclip_image_updated_at"
   end
-
 end

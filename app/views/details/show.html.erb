@@ -1,5 +1,5 @@
 <div class="detail-image-container">
-  <%= image_tag(@painting.image, :class => "detail-image") %>
+  <%= image_tag(@painting.image ||= @painting.pclip_image, :class => "detail-image") %>
 </div>
 
 <div class="container painting-details">

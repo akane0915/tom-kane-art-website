@@ -4,6 +4,9 @@ class Painting < ApplicationRecord
   validates :title, presence: true, uniqueness: true
   has_many :order_items
 
+  has_attached_file :pclip_image, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/:style/missing.png"
+  validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/
+
   before_create do
     self.slug = slug_it(self.title)
   end
