@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   root 'home#index', as: 'home'
 
+  resources :admins
   resources :paintings
   resources :privacy_policy, :about, only: [:index]
   resources :details, only: [:show]
