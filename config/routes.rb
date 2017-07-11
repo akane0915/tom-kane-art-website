@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :admins
+  devise_for :admins, skip: :registrations
 
   root 'home#index', as: 'home'
 
@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :details, only: [:show]
   resources :order_items
   resources :charges, only: [:new, :create]
-  
+
   resource :cart, only: [:show]
 
   # consider resource when reworking
