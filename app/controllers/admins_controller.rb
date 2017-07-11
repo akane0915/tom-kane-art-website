@@ -1,4 +1,4 @@
-class AdminController < ApplicationController
+class AdminsController < ApplicationController
   before_action do
     redirect_to new_admin_session_path unless current_admin.try(:super_admin)
   end
