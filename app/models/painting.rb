@@ -2,6 +2,8 @@ class Painting < ApplicationRecord
   has_many :order_items
   validates :dimensions, :medium, :support, :price, :style, presence: true
   validates :title, presence: true, uniqueness: true
+  has_many :order_items
+
   before_create do
     self.slug = slug_it(self.title)
   end

@@ -1,6 +1,6 @@
 class ChargesController < ApplicationController
   before_action :amount_to_be_charged
-  before_action :description
+  before_action :set_description
 
   def new
   end
@@ -16,18 +16,22 @@ class ChargesController < ApplicationController
       amount: @amount,
       description: @description
     )
+    redirect_to thanks_path
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
     redirect_to new_charge_path
   end
+
+  def thanks
+  end
+
 private
   def amount_to_be_charged
-    @amount = 200000
+    @amount = (current_order.calculate_total * 100).to_i
   end
 
-  def description
-    @description = "Amazing Paintings!"
+  def set_description
+    @description = "Some amazing product"
   end
-
 end

@@ -14,5 +14,4 @@ module StripeTool
       currency: 'usd'
     )
   end
-
 end
