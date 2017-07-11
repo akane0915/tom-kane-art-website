@@ -3,9 +3,11 @@ class ChargesController < ApplicationController
   before_action :set_description
 
   def new
+    @charge = Charge.new
   end
 
   def create
+    binding.pry
     customer = StripeTool.create_customer(
       email: params[:email],
       stripe_token: params[:stripeToken]
@@ -16,6 +18,7 @@ class ChargesController < ApplicationController
       amount: @amount,
       description: @description
     )
+
     redirect_to thanks_path
 
   rescue Stripe::CardError => e
@@ -36,6 +39,7 @@ private
   end
 
   def charge_params
-    params.require(:charges).permit(:name, :phone, :email)
+    params.require(:charge).permit(:name, :phone, :email)
   end
+
 end

@@ -1,66 +1,66 @@
 
 <div id="payment-details-page">
-  
+
   <h1>Payment Details</h1>
   <br>
   <div class="payment-form">
     <div class="container">
-      <%= form_tag charges_path, method: 'post', id: 'charge-form' do %>
+      <%= form_for @charge, html: { id: 'charge-form' } do |f| %>
       <span class="charge-errors"></span>
 
       <label for="contact-information">Contact Information</label>
       <div class="form-group row">
         <div class="col-md-6">
-          <%= text_field_tag :name, "", class: "form-control", placeholder: "Name" %>
+          <%= f.text_field :name, placeholder: "Name", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input id="phone" class="form-control" type="text" placeholder="Phone (000-000-0000)"/>
+          <%= f.text_field :phone, placeholder: "Phone (000-000-0000)", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input id="email" class="form-control" type="text" placeholder="Email Address"/>
+          <%= f.text_field :email, placeholder: "Email Address", class: 'form-control' %>
         </div>
       </div>
 
       <label for="shipping-address">Shipping Address</label>
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="Address Line 1 (Street Address, P.O. Box)"/>
+          <%= f.text_field :address1, placeholder: "Address Line 1 (Street Address, P.O. Box)", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="Address Line 2 (Apartment, Suite, Unit, Building, etc.)">
+          <%= f.text_field :address2, placeholder: "Address Line 2 (Apartment, Suite, Unit, Building, etc.)", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="City"/>
+          <%= f.text_field :city, placeholder: "City", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="State/Province"/>
+          <%= f.text_field :state, placeholder: "State/Province", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="Zip/Postal Code"/>
+          <%= f.text_field :zip, placeholder: "Zip/Postal Code", class: 'form-control' %>
         </div>
       </div>
 
       <div class="form-group row">
         <div class="col-md-6">
-          <input class="form-control" type="text" placeholder="Country"/>
+          <%= f.text_field :country, placeholder: "Country", class: 'form-control' %>
         </div>
       </div>
 
