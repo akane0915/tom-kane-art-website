@@ -39,6 +39,7 @@ gem 'aws-sdk', '~> 2.3'
 gem 'devise'
 gem 'stripe'
 gem 'rails_12factor', group: :production
+gem 'dotenv-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -55,7 +56,6 @@ group :development, :test do
   gem 'selenium-webdriver'
   gem "factory_girl_rails", "~> 4.0"
   gem 'simplecov', require: false
-  gem 'dotenv-rails'
 end
 
 group :development do
