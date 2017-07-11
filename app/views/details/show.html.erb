@@ -13,7 +13,7 @@
     <h3><%= number_to_currency(@painting.price) %></h3>
     <%= form_for @order_item do |f| %>
       <%= f.hidden_field :painting_id, value: @painting.id %>
-      <%= f.submit "Add to cart" %>
+      <%= f.submit "Add to Cart", class: "btn btn-default btn-lg" %>
     <% end %>
   <% else %>
     <p>This item is in your <%= link_to 'cart', cart_path %>.</p>

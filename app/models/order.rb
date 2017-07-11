@@ -1,5 +1,6 @@
 class Order < ApplicationRecord
   has_many :order_items
+
   before_save :update_total
   before_create :update_status
 
@@ -7,7 +8,7 @@ class Order < ApplicationRecord
     self.order_items.collect { |item| item.painting.price }.sum
   end
 
-  private
+private
 
   def update_status
     if self.status == nil?
