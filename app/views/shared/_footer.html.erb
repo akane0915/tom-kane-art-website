@@ -1,8 +1,10 @@
-<div class="shopping-cart">
-  <%= link_to cart_path do %>
-    <%= image_tag 'gradycart.png' %>
-  <% end %>
-</div>
+<% if current_order.total_price != 0 %>
+  <div class="shopping-cart">
+    <%= link_to cart_path do %>
+      <%= image_tag 'gradycart.png' %>
+    <% end %>
+  </div>
+<% end %>
 <footer class="footer">
   <a href="http://filmproductionworkshops.com/" target="_blank">
   <i class="fa fa-film" aria-hidden="true"></i></a>
