@@ -3,11 +3,19 @@ class ChargesController < ApplicationController
   before_action :set_description
 
   def new
-    @charge = Charge.new
+    @charge = current_order.charge.new
   end
 
   def create
-    binding.pry
+    @charge = current_order.charge.new(charge_params)
+    if @charge.save
+      redirect_to review_order_path(id: @charge.id)
+    else
+      render :new
+    end
+  end
+
+  def submit
     customer = StripeTool.create_customer(
       email: params[:email],
       stripe_token: params[:stripeToken]
@@ -39,7 +47,7 @@ private
   end
 
   def charge_params
-    params.require(:charge).permit(:name, :phone, :email)
+    params.require(:charge).permit(:name, :email, :phone, :address1, :address2, :city, :state, :zip, :country)
   end
 
 end
