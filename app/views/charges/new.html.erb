@@ -5,7 +5,7 @@
   <br>
   <div class="payment-form">
     <div class="container">
-      <%= form_for @charge, html: { id: 'charge-form' } do |f| %>
+      <%= form_for @charge, html: { id: 'charge-details-form' } do |f| %>
       <span class="charge-errors"></span>
 
       <label for="contact-information">Contact Information</label>
@@ -64,7 +64,7 @@
         </div>
       </div>
 
-      <%= f.submit, "Proceed to Payment",class: "btn btn-default btn-lrg" %>
+      <%= f.submit "Proceed to Payment", class: "btn btn-default btn-lrg" %>
       <% end %>
     </div>
   </div>

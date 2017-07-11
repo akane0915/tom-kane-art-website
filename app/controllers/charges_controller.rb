@@ -3,16 +3,26 @@ class ChargesController < ApplicationController
   before_action :set_description
 
   def new
-    @charge = current_order.charge.new
+    @charge = Charge.new
+    @order = current_order
   end
 
   def create
-    @charge = current_order.charge.new(charge_params)
+    @order = current_order
+    @charge = Charge.new(charge_params)
+    @charge.order_id = @order.id
     if @charge.save
+      @order.charge = @charge
+      @order.save
       redirect_to review_order_path(id: @charge.id)
     else
       render :new
     end
+  end
+
+  def review
+    @charge = Charge.find(params[:id])
+    render :review_order
   end
 
   def submit
