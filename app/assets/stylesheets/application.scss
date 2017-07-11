@@ -10,11 +10,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require bootstrap.min
  *= require_self
  *= require_tree .
  */
 
+@import "bootstrap-sprockets";
+@import "bootstrap";
 @import 'font-awesome-sprockets';
 @import "font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
@@ -91,6 +92,10 @@ $button-width: 35px;
       transform: translateY(-11px) translateX(0) rotate(-45deg);
       background: $color-active;
     }
+  }
+
+  .fa-shopping-cart{
+    color: #42424a;
   }
 
   span {
@@ -238,6 +243,22 @@ body {
 #body {
   min-height: 80vh;
   padding-bottom: 10vh;
+}
+
+.shopping-cart img{
+  height: 75px;
+  width: auto;
+  padding: 4px;
+  background-color: white;
+  box-shadow: 0px 0px 25px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  position: fixed;
+  bottom:5%;
+  right: 2%;
+  // height: $button-height;
+  // width: $button-width;
+  cursor: pointer;
+  z-index: 5;
 }
 
 .footer {

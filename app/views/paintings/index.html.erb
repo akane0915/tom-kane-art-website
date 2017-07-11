@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <h1>Paintings</h1>
 
-<h1>Paintings</h1>
+  <% @paintings.each do |painting| %>
 
-<% @paintings.each do |painting| %>
+    <h2><%= link_to "#{painting.title}", painting %></h2>
+    <p><%= "Year: #{painting.year}" %></p>
+    <p>Price: <%= painting.price == 0 ? "Not for Sale" : number_to_currency(painting.price) %></p>
 
-  <h2><%= link_to "Title: #{painting.title}", painting %></h2>
-  <p><%= "Year: #{painting.year}" %></p>
-  <p><%= "Price: #{painting.price}" %></p>
 
-<% end %>
+  <% end %>
+  <br>
+  <%= link_to 'New Painting', new_painting_path %>
 
-<br>
-
-<%= link_to 'New Painting', new_painting_path %>
+</div>

@@ -11,8 +11,7 @@
 // about supported directives.
 //
 //= require jquery3
-//= require jquery_ujs
 //= require rails-ujs
-//= require bootstrap.min
+//= require bootstrap-sprockets
 //= require float-panel
 //= require_tree .

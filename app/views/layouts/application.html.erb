@@ -3,9 +3,14 @@
   <head>
     <title>Tom Kane Art</title>
     <%= csrf_meta_tags %>
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload'%>
+    <script type="text/javascript">
+      Stripe.setPublishableKey('<%= Rails.configuration.stripe[:publishable_key] %>');
+    </script>
+    
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <%= render 'application/favicon' %>
   </head>
 
@@ -23,7 +28,6 @@
               User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %>
             </p>
           <% end %>
-
           <%= yield %>
         </div>
 
