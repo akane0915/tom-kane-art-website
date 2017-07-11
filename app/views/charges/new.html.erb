@@ -85,7 +85,10 @@
       </div>
 
       <br>
-      <button class="btn btn-default btn-lrg" type="submit">Submit Payment</button>
+      <button class="btn btn-success btn-lrg" type="submit">Place Your Order</button>
+      <p>
+        By placing your order, you acknowledge that your credit card will be charged <%= number_to_currency(current_order.total_price) %>.
+      </p>
       <% end %>
     </div>
   </div>
