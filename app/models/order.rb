@@ -1,6 +1,6 @@
 class Order < ApplicationRecord
   has_many :order_items
-  has_one :charge
+  has_one :charge, dependent: :destroy
 
   before_save :update_total
   before_create :update_status

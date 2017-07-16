@@ -9,12 +9,9 @@ class ChargesController < ApplicationController
 
   def create
     @order = current_order
-    @charge = Charge.new(charge_params)
-    @charge.order_id = @order.id
-    if @charge.save
-      @order.charge = @charge
+    if @order.create_charge(charge_params)
       @order.save
-      redirect_to review_order_path(id: @charge.id)
+      redirect_to review_order_path(id: @order.charge)
     else
       render :new
     end
@@ -22,6 +19,7 @@ class ChargesController < ApplicationController
 
   def review
     @charge = Charge.find(params[:id])
+    @order = @charge.order
     render :review_order
   end
 
@@ -57,7 +55,17 @@ private
   end
 
   def charge_params
-    params.require(:charge).permit(:name, :email, :phone, :address1, :address2, :city, :state, :zip, :country)
+    params.require(:charge).permit(
+      :name,
+      :email,
+      :phone,
+      :address1,
+      :address2,
+      :city,
+      :state,
+      :zip,
+      :country
+    )
   end
 
 end
