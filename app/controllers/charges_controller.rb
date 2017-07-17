@@ -35,7 +35,6 @@ class ChargesController < ApplicationController
       description: @description
     )
 
-    session[:order_id] = nil
     redirect_to thanks_path
 
   rescue Stripe::CardError => e
@@ -52,7 +51,7 @@ private
   end
 
   def set_description
-    @description = "Some amazing product"
+    @description = current_order.order_number
   end
 
   def charge_params
