@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>New Admin</h1>
+
+  <%= render "shared/errors", object: @admin %>
+
+  <%= form_for @admin do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email, class: :"form-control" %>
+
+  <%= f.label :password %>
+  <%= f.password_field :password, class: :"form-control" %>
+
+  <%= f.label :password_confirmation %>
+  <%= f.password_field :password_confirmation, class: :"form-control" %>
+
+  <br>
+  <%= f.submit class:"btn btn-default" %>
+  <% end %>
+</div>

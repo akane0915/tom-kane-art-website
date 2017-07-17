@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  devise_for :admins
+  devise_for :admins, skip: :registrations
 
   root 'home#index', as: 'home'
 
+  resources :admins
   resources :paintings
   resources :privacy_policy, :about, only: [:index]
   resources :details, only: [:show]

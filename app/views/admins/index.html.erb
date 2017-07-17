@@ -1,0 +1,13 @@
+<div class="container">
+  <% @admins.each do |admin| %>
+    <h3>
+      <%= admin.email %>
+      <%= link_to admin_path(admin), data: {confirm: "Are you sure you want to delete this admin account?", method: :delete } do %>
+        <span class="hidden">Delete Review</span>
+        <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
+    </h3>
+  <% end %>
+
+  <%= link_to "New Admin", new_admin_path, class:"btn btn-default" %>
+</div>

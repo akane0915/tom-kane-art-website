@@ -25,7 +25,7 @@
         <div id="yield">
           <% if current_admin %>
             <p>
-              User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %>
+              User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %> | <%= link_to "Admins", admins_path if current_admin.super_admin %>
             </p>
           <% end %>
           <%= yield %>
@@ -42,10 +42,10 @@
 
             <% if current_admin %>
               <p>
-                User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %>
+                User: <%= current_admin.email %> | <%= link_to "Sign out", destroy_admin_session_path, method: 'delete' %> | <%= link_to "Paintings", paintings_path %> | <%= link_to("Admins", admins_path) if current_admin.super_admin %>
               </p>
             <% elsif request.env['PATH_INFO'] == "/admins/sign_in" %>
-              <%= link_to "Sign up", new_admin_registration_path %> | <%= link_to "Sign in", new_admin_session_path %> | <%= link_to "Paintings", paintings_path %>
+              <%= link_to "Sign in", new_admin_session_path %> | <%= link_to "Paintings", paintings_path %>
             <% end %>
 
 
