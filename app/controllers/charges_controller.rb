@@ -9,8 +9,8 @@ class ChargesController < ApplicationController
 
   def create
     @order = current_order
-    if @order.create_charge(charge_params)
-      @order.save
+    @charge = @order.build_charge(charge_params)
+    if @charge.save
       redirect_to review_order_path(id: @order.charge)
     else
       render :new
@@ -35,6 +35,7 @@ class ChargesController < ApplicationController
       description: @description
     )
 
+    session[:order_id] = nil
     redirect_to thanks_path
 
   rescue Stripe::CardError => e
