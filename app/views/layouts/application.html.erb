@@ -6,7 +6,7 @@
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
     <script type="text/javascript">
-      Stripe.setPublishableKey('<%= Rails.configuration.stripe[:publishable_key] %>');
+      Stripe.setPublishableKey('<%= Rails.configuration.stripe.fetch(:publishable_key) %>');
     </script>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>

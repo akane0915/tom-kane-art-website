@@ -39,7 +39,7 @@ class ChargesController < ApplicationController
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_charge_path
+    redirect_back fallback_location: review_order_path(id: current_order.charge)
   end
 
   def thanks
