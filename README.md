@@ -2,7 +2,7 @@
 
 ![homepage](https://user-images.githubusercontent.com/25161777/27449916-cdb3f0fa-573e-11e7-8750-951b039c1a79.png)
 
-This a website for an artist to display and sell his gallery of paintings for potentials buyers. The artist can upload additional files for listing new paintings and updating existing paintings through an administrative authentication.
+This a freelance website for an artist to display and sell his gallery of paintings for potentials buyers. The artist can upload additional files for listing new paintings and updating existing paintings through an administrative authentication. Features Stripe, Devise, AWS, Paperclip, and ActionMailer.
 
 ### Statement of Work
 https://docs.google.com/document/d/1LYGByq_7UnubV5P1nPozUEuvJ8nnUu866HmxlpSJT9s/edit?ts=5948677c
