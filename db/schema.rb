@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20170716215639) do
     t.inet "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-
     t.boolean "super_admin", default: false
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
@@ -89,4 +88,5 @@ ActiveRecord::Schema.define(version: 20170716215639) do
     t.integer "pclip_image_file_size"
     t.datetime "pclip_image_updated_at"
   end
+
 end
