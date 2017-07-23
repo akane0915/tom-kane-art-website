@@ -43,6 +43,7 @@ class ChargesController < ApplicationController
   end
 
   def thanks
+    session[:order_id] = nil
   end
 
 private
