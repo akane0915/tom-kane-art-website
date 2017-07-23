@@ -4,14 +4,10 @@ class Painting < ApplicationRecord
   validates :title, presence: true, uniqueness: true
   has_many :order_items
 
-  # has_attached_file :pclip_image,
-  #   styles: { medium: "300x300>", thumb: "100x100>" },
-  #   default_url: "/images/:style/missing.png"
-
   has_attached_file :pclip_image,
       :styles => { :medium => "300x300>", :thumb => "100x100>" },
       :url => ":s3_domain_url",
-      :path => 'paintings/pclip_image/:style_:basename.:extension',
+      :path => 'paintings/:id/pclip_image/:style_:basename.:extension',
       :storage => :s3,
       :bucket => ENV['S3_BUCKET'],
       :s3_credentials => {
