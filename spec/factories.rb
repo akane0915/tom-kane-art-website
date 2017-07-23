@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :charge do
+    
+  end
   factory :admin do
     
   end

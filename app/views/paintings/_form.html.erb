@@ -57,10 +57,10 @@
     <%= form.select :style, options_for_select([['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :image %>
-    <%= form.text_field :image, id: :painting_image, class: :"form-control" %>
-  </div>
+
+    <%= form.label :pclip_image %>
+      <%= form.file_field :pclip_image, id: :painting_image, class: :"form-control" %>
+
 
   <div class="actions">
     <%= form.submit class: :"btn btn-default" %>

@@ -12,10 +12,11 @@
   <h3>Your total comes to<h3>
   <h3><%= number_to_currency(@order.total_price) %></h3>
 
+  <%= link_to "Proceed to Checkout", new_charge_path, class: "btn btn-success btn-lrg"%>
+
 <% else %>
   <h4>Your shopping cart is empty.</h4>
 <% end %>
 
 <hr>
 <%= link_to "Back to Gallery", home_path, class: "btn btn-default btn-lrg"%>
-

@@ -19,4 +19,7 @@ Rails.application.routes.draw do
 
   get 'thanks', to: 'charges#thanks', as: 'thanks'
 
+  get 'charges/review', to: 'charges#review', as: 'review_order'
+  post 'charges/review', to: 'charges#submit', as: 'submit_order'
+
 end
