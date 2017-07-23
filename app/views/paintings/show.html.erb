@@ -11,7 +11,7 @@
   <p>Year: <%= @painting.year %></p>
   <p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
   <p>Style: <%= @painting.style %></p>
-  <p>Image: <%= @painting.image ||= @painting.pclip_image %></p>
+  <p>Image: <%= image_tag @painting.image || @painting.pclip_image.url %></p>
 
   <%= link_to 'Edit', edit_painting_path(@painting) %> |
   <%= link_to 'Delete', @painting, method: :delete, data: { confirm: 'Are you sure?' } %> |
