@@ -11,7 +11,7 @@ class Painting < ApplicationRecord
   has_attached_file :pclip_image,
       :styles => { :medium => "300x300>", :thumb => "100x100>" },
       :url => ":s3_domain_url",
-      :path => 'users/:id/pclip_image/:style_:basename.:extension',
+      :path => 'paintings/pclip_image/:style_:basename.:extension',
       :storage => :s3,
       :bucket => ENV['S3_BUCKET'],
       :s3_credentials => {
