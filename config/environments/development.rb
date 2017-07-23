@@ -26,6 +26,16 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  #Paperclip config
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
+  # Paperclip S3 config
+  config.paperclip_defaults = {
+    :storage => :s3,
+    # :s3_host_name => 'REMOVE_THIS_LINE_IF_UNNECESSARY',
+    :bucket => 'tom-kane-art-bucket'
+  }
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
@@ -36,6 +46,8 @@ Rails.application.configure do
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
+  
+  config.assets.unknown_asset_fallback = true
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
