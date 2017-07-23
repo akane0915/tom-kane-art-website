@@ -3,11 +3,29 @@ class ChargesController < ApplicationController
   before_action :set_description
 
   def new
+    @charge = Charge.new
+    @order = current_order
   end
 
   def create
+    @order = current_order
+    @charge = @order.build_charge(charge_params)
+    if @charge.save
+      redirect_to review_order_path(id: @order.charge)
+    else
+      render :new
+    end
+  end
+
+  def review
+    @charge = Charge.find(params[:id])
+    @order = @charge.order
+    render :review_order
+  end
+
+  def submit
     customer = StripeTool.create_customer(
-      email: params[:stripeEmail],
+      email: params[:email],
       stripe_token: params[:stripeToken]
     )
 
@@ -16,11 +34,12 @@ class ChargesController < ApplicationController
       amount: @amount,
       description: @description
     )
+
     redirect_to thanks_path
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_charge_path
+    redirect_back fallback_location: review_order_path(id: current_order.charge)
   end
 
   def thanks
@@ -32,6 +51,21 @@ private
   end
 
   def set_description
-    @description = "Some amazing product"
+    @description = current_order.order_number
   end
+
+  def charge_params
+    params.require(:charge).permit(
+      :name,
+      :email,
+      :phone,
+      :address1,
+      :address2,
+      :city,
+      :state,
+      :zip,
+      :country
+    )
+  end
+
 end

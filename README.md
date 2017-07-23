@@ -54,12 +54,19 @@ If all went well, rails will now make this project available in your browser by 
 
 ### Testing
 
-This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, Shoulda-Matchers, Factory Girl, and Simple Cov. In your termainl run:
+This application includes both Unit and User Integration testing.  It primarily uses RSpec, Capybara, Shoulda-Matchers, Factory Girl, and Simple Cov.
+
+Create an .env file at the top level of the project folder.  In the file, include (replace strings with your own API test keys):
+
+PUBLISHABLE_KEY="Your publishable key from stripe here"
+SECRET_KEY="Your secret key from stripe here"
+
+In your terminal run:
 
 ```
 $ bundle exec rails db:test:prepare
 ```
-$ rspec
+$ bundle exec rspec
 ```
 
 ## Screenshots
