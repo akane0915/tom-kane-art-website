@@ -65,7 +65,6 @@ In your terminal run:
 
 ```
 $ bundle exec rails db:test:prepare
-```
 $ bundle exec rspec
 ```
 
