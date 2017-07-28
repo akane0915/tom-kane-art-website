@@ -129,6 +129,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.6)
       mime-types (>= 1.16, < 4)
+    mailgun-ruby (1.1.6)
+      rest-client (~> 2.0)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
@@ -302,6 +304,7 @@ DEPENDENCIES
   jquery-rails
   launchy
   listen (>= 3.0.5, < 3.2)
+  mailgun-ruby (~> 1.1.6)
   paperclip (~> 5.0.0)
   pg (~> 0.18)
   pry
@@ -325,4 +328,4 @@ RUBY VERSION
    ruby 2.4.1p111
 
 BUNDLED WITH
-   1.15.1
+   1.15.3
