@@ -14,26 +14,26 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T15:30:31-07:00">2017-07-28T15:30:31-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T15:49:34-07:00">2017-07-28T15:49:34-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">80.09%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.43%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.25
+         1.26
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>61</b> files in total.
-    <b>462</b> relevant lines. 
-    <span class="green"><b>370</b> lines covered</span> and
+    <b>470</b> relevant lines. 
+    <span class="green"><b>378</b> lines covered</span> and
     <span class="red"><b>92</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -352,10 +352,10 @@
       
       <tr>
         <td class="strong"><a href="#1c2a055080eecbed4bba14125b05efe838009873" class="src_link" title="app/models/order.rb">app/models/order.rb</a></td>
-        <td class="red strong">57.89 %</td>
-        <td>32</td>
-        <td>19</td>
-        <td>11</td>
+        <td class="red strong">60.0 %</td>
+        <td>42</td>
+        <td>20</td>
+        <td>12</td>
         <td>8</td>
         <td>0.6</td>
       </tr>
@@ -633,11 +633,11 @@
       <tr>
         <td class="strong"><a href="#e6d5e9d7b2d01b11933c00428527265fb9a566a3" class="src_link" title="spec/models/order_spec.rb">spec/models/order_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>3</td>
-        <td>3</td>
+        <td>12</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.8</td>
       </tr>
       
       <tr>
@@ -3559,10 +3559,10 @@
         <div class="source_table" id="1c2a055080eecbed4bba14125b05efe838009873">
   <div class="header">
     <h3>app/models/order.rb</h3>
-    <h4><span class="red">57.89 %</span> covered</h4>
+    <h4><span class="red">60.0 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>20</b> relevant lines. 
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>8</b> lines missed.</span>
     </div>
   </div>
@@ -3597,55 +3597,55 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_save :update_total</code>
+          <code class="ruby">  validates :order_items,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="6">
           
-          <code class="ruby">  before_save :generate_order_number</code>
+          
+          <code class="ruby">    :charge,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="7">
           
-          <code class="ruby">  before_create :update_status</code>
+          
+          <code class="ruby">    :status,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    :total_price,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="9">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="9">
           
-          <code class="ruby">  def calculate_total</code>
+          
+          <code class="ruby">    :order_number,</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">    self.order_items.collect { |item| item.painting.price }.sum</code>
+          <code class="ruby">    :shipping,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    :subtotal,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    :tax,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="13">
           
-          <code class="ruby">private</code>
+          
+          <code class="ruby">    presence: true</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
@@ -3657,55 +3657,55 @@
         <li class="covered" data-hits="1" data-linenumber="15">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update_status</code>
+          <code class="ruby">  before_save :update_total</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    if self.status == nil?</code>
+          <code class="ruby">  before_save :generate_order_number</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      self.status = &quot;In progress&quot;</code>
+          <code class="ruby">  before_create :update_status</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def calculate_total</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="20">
+          
+          
+          <code class="ruby">    self.order_items.collect { |item| item.painting.price }.sum</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update_total</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="22">
-          
-          
-          <code class="ruby">    self.total_price = calculate_total</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="23">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">private</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -3717,46 +3717,106 @@
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">  def generate_order_number</code>
+          <code class="ruby">  def update_status</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="26">
           
           
-          <code class="ruby">    order_number = rand(100000..999999)</code>
+          <code class="ruby">    if self.status == nil?</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="27">
           
           
-          <code class="ruby">    if Order.where(order_number: order_number).exists?</code>
+          <code class="ruby">      self.status = &quot;In progress&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="28">
-          
-          
-          <code class="ruby">      assign_order_number</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
-          
-          
-          <code class="ruby">    self.order_number = order_number</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="31">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def update_total</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="32">
+          
+          
+          <code class="ruby">    self.total_price = calculate_total</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def generate_order_number</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">    order_number = rand(100000..999999)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="37">
+          
+          
+          <code class="ruby">    if Order.where(order_number: order_number).exists?</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="38">
+          
+          
+          <code class="ruby">      assign_order_number</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="40">
+          
+          
+          <code class="ruby">    self.order_number = order_number</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">end</code>
@@ -8461,8 +8521,8 @@
     <h3>spec/models/order_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -8491,16 +8551,52 @@
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
+          <code class="ruby">  it { should have_many :order_items }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
           <code class="ruby">  it { should have_one :charge }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  it { should validate_presence_of :status }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :total_price }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :order_number }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="9">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :shipping }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :subtotal }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :tax }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">end</code>
