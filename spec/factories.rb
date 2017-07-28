@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :charge do
-    
+
   end
   factory :admin do
-    
+
   end
   factory :painting do
     title 'Cherry Blossoms With Wind'
@@ -16,5 +16,6 @@ FactoryGirl.define do
     price '1500'
     image 'https://images-na.ssl-images-amazon.com/images/I/31Dy9-24ulL._SY355_.jpg'
     style 'landscape'
+    status 'for sale'
   end
 end

@@ -14,14 +14,14 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T15:49:34-07:00">2017-07-28T15:49:34-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-28T16:46:40-07:00">2017-07-28T16:46:40-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">80.43%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.47%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>61</b> files in total.
-    <b>470</b> relevant lines. 
-    <span class="green"><b>378</b> lines covered</span> and
+    <b>471</b> relevant lines. 
+    <span class="green"><b>379</b> lines covered</span> and
     <span class="red"><b>92</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -372,12 +372,12 @@
       
       <tr>
         <td class="strong"><a href="#3786e8aa231c9955db7bd1631796d71662eb4247" class="src_link" title="app/models/painting.rb">app/models/painting.rb</a></td>
-        <td class="green strong">94.44 %</td>
-        <td>45</td>
-        <td>18</td>
+        <td class="green strong">94.12 %</td>
+        <td>42</td>
         <td>17</td>
+        <td>16</td>
         <td>1</td>
-        <td>2.4</td>
+        <td>2.5</td>
       </tr>
       
       <tr>
@@ -553,9 +553,9 @@
       <tr>
         <td class="strong"><a href="#501461bd970c35da11a5e75ec846247a247f4ab4" class="src_link" title="spec/factories.rb">spec/factories.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>20</td>
-        <td>14</td>
-        <td>14</td>
+        <td>21</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -623,7 +623,7 @@
       <tr>
         <td class="strong"><a href="#83f928f40ebed57af69ba4a47722e1b30da04a6b" class="src_link" title="spec/models/charge_spec.rb">spec/models/charge_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
+        <td>17</td>
         <td>11</td>
         <td>11</td>
         <td>0</td>
@@ -643,9 +643,9 @@
       <tr>
         <td class="strong"><a href="#b83235f7de177ee6d15e0b60100b39d7fc78a63a" class="src_link" title="spec/models/painting_spec.rb">spec/models/painting_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>73</td>
-        <td>27</td>
-        <td>27</td>
+        <td>84</td>
+        <td>28</td>
+        <td>28</td>
         <td>0</td>
         <td>1.3</td>
       </tr>
@@ -3873,10 +3873,10 @@
         <div class="source_table" id="3786e8aa231c9955db7bd1631796d71662eb4247">
   <div class="header">
     <h3>app/models/painting.rb</h3>
-    <h4><span class="green">94.44 %</span> covered</h4>
+    <h4><span class="green">94.12 %</span> covered</h4>
     <div>
-      <b>18</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -3899,7 +3899,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  validates :dimensions, :medium, :support, :price, :style, presence: true</code>
+          <code class="ruby">  validates :dimensions, :medium, :support, :price, :style, :status, presence: true</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -3908,247 +3908,229 @@
           <code class="ruby">  validates :title, presence: true, uniqueness: true</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  has_many :order_items</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">  </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="5">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
           <code class="ruby">  has_attached_file :pclip_image,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">      :styles =&gt; { :medium =&gt; &quot;300x300&gt;&quot;, :thumb =&gt; &quot;100x100&gt;&quot; },</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="8">
           
           
           <code class="ruby">      :url =&gt; &quot;:s3_domain_url&quot;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">      :path =&gt; &#39;paintings/:id/pclip_image/:style_:basename.:extension&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">      :storage =&gt; :s3,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">      :bucket =&gt; ENV[&#39;S3_BUCKET&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="12">
           
           
           <code class="ruby">      :s3_credentials =&gt; {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
           <code class="ruby">        :access_key_id =&gt; ENV[&#39;S3_KEY&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">        :secret_access_key =&gt; ENV[&#39;S3_SECRET&#39;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">      }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">  # validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">  validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">  before_create do</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="24">
+        <li class="covered" data-hits="6" data-linenumber="21">
           <span class="hits">6</span>
           
           <code class="ruby">    self.slug = slug_it(self.title)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">  def s3_credentials</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">    {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="26">
           
           
           <code class="ruby">      :bucket =&gt; ENV.fetch(&quot;S3_BUCKET_NAME&quot;),</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">      :access_key_id =&gt; ENV.fetch(&quot;AWS_ACCESS_KEY_ID&quot;),</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
+        <li class="never" data-hits="" data-linenumber="28">
           
           
           <code class="ruby">      :secret_access_key =&gt; ENV.fetch(&quot;AWS_SECRET_ACCESS_KEY&quot;),</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">      :s3_region =&gt; ENV.fetch(&quot;AWS_REGION&quot;)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="33">
+        <li class="missed" data-hits="0" data-linenumber="30">
           
           
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
+        <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
           <code class="ruby">  private</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
           <code class="ruby">  def slug_it(title)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="38">
+        <li class="covered" data-hits="6" data-linenumber="35">
           <span class="hits">6</span>
           
           <code class="ruby">    return unless title</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="39">
+        <li class="covered" data-hits="5" data-linenumber="36">
           <span class="hits">5</span>
           
           <code class="ruby">    downcase = title.downcase</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby">    # [^a-z 0-9]+ means to remove anything that isnt alphanumeric or a space</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="41">
+        <li class="covered" data-hits="5" data-linenumber="38">
           <span class="hits">5</span>
           
           <code class="ruby">    clean = downcase.gsub(/ - /, &quot;_&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="42">
+        <li class="covered" data-hits="5" data-linenumber="39">
           <span class="hits">5</span>
           
           <code class="ruby">    extra_clean = clean.gsub(/[^a-z 0-9_]+/, &quot;&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="43">
+        <li class="covered" data-hits="5" data-linenumber="40">
           <span class="hits">5</span>
           
           <code class="ruby">    slug = extra_clean.gsub(/\s/, &quot;_&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="45">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">end</code>
@@ -7259,8 +7241,8 @@
     <h3>spec/factories.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -7283,7 +7265,7 @@
         <li class="never" data-hits="" data-linenumber="3">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -7301,7 +7283,7 @@
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">    </code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -7376,13 +7358,19 @@
           <code class="ruby">    style &#39;landscape&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    status &#39;for sale&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">end</code>
@@ -8508,6 +8496,30 @@
         <li class="never" data-hits="" data-linenumber="13">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  # describe &quot;#calculate_total&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
           <code class="ruby">end</code>
         </li>
       
@@ -8612,8 +8624,8 @@
     <h3>spec/models/painting_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>27</b> relevant lines. 
-      <span class="green"><b>27</b> lines covered</span> and
+      <b>28</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -8663,262 +8675,262 @@
           <code class="ruby">  it { should validate_presence_of :support }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="8">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="8">
           
-          <code class="ruby">  it { should validate_presence_of :price }</code>
+          
+          <code class="ruby">  # it { should validate_presence_of :framed }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="9">
           <span class="hits">2</span>
           
+          <code class="ruby">  it { should validate_presence_of :price }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  # it { should validate_presence_of :year }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
+          
           <code class="ruby">  it { should validate_presence_of :style }</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="10">
+        <li class="covered" data-hits="2" data-linenumber="12">
           <span class="hits">2</span>
           
           <code class="ruby">  it { should validate_uniqueness_of :title }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  it { should validate_presence_of :status }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  describe &quot;#slug_it&quot; do</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="13">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    let(:painting1) {</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="14">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      Painting.create(</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">        title: &quot;BobKnob&quot;,</code>
+          <code class="ruby">  # it { should have_attached_file(:pclip_image_file_name) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">        dimensions: &quot;10 x 20&quot;,</code>
+          <code class="ruby">  # it { should validate_attachment_presence(:pclip_image_file_name) }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">        medium: &quot;acrylic&quot;,</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">        support: &quot;wood&quot;,</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        price: 666.66,</code>
+          <code class="ruby">  describe &quot;#slug_it&quot; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">        style: &quot;square&quot;,</code>
+          <code class="ruby">    let(:painting1) {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      )</code>
+          <code class="ruby">      Painting.create(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">        title: &quot;BobKnob&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">    let(:painting2) {</code>
+          
+          <code class="ruby">        dimensions: &quot;10 x 20&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby">      Painting.create(</code>
+          
+          <code class="ruby">        medium: &quot;acrylic&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">        title: &quot;Puppies - Kittens&quot;,</code>
+          <code class="ruby">        support: &quot;wood&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
-          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
+          <code class="ruby">        price: 666.66,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
+          <code class="ruby">        style: &quot;square&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">        support: &quot;canvas&quot;,</code>
+          <code class="ruby">        status: &quot;for sale&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">        price: 5500,</code>
+          <code class="ruby">      )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">        style: &quot;portrait&quot;,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">      )</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
           <code class="ruby">    }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="31">
           <span class="hits">1</span>
           
-          <code class="ruby">    let(:painting3) {</code>
+          <code class="ruby">    let(:painting2) {</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">      Painting.create(</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">        title: &quot;Puppies - Kittens&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">        title: &quot;Life... Death... Blood!&quot;,</code>
+          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
+          <code class="ruby">        support: &quot;canvas&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
+          <code class="ruby">        price: 5500,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">        support: &quot;canvas&quot;,</code>
+          <code class="ruby">        style: &quot;portrait&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">        price: 5500,</code>
+          <code class="ruby">        status: &quot;for sale&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="40">
           
           
-          <code class="ruby">        style: &quot;portrait&quot;,</code>
+          <code class="ruby">      )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">      )</code>
+          <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="covered" data-hits="1" data-linenumber="42">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">    }</code>
+          <code class="ruby">    let(:painting3) {</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">    let(:painting4) {</code>
+          <code class="ruby">      Painting.create(</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="44">
           
-          <code class="ruby">      Painting.create(</code>
+          
+          <code class="ruby">        title: &quot;Life... Death... Blood!&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">        title: &quot;Sex and Drugs - and Rock&#39;n&#39;Roll!&quot;,</code>
+          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
+          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
+          <code class="ruby">        support: &quot;canvas&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">        support: &quot;canvas&quot;,</code>
+          <code class="ruby">        price: 5500,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">        price: 5500,</code>
+          <code class="ruby">        style: &quot;portrait&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">        style: &quot;portrait&quot;,</code>
+          <code class="ruby">        status: &quot;for sale&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
@@ -8933,127 +8945,193 @@
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="covered" data-hits="1" data-linenumber="53">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    let(:painting4) {</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">    describe &quot;creates slug from title&quot; do</code>
+          <code class="ruby">      Painting.create(</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="55">
           
-          <code class="ruby">      it &quot;downcases the title&quot; do</code>
+          
+          <code class="ruby">        title: &quot;Sex and Drugs - and Rock&#39;n&#39;Roll!&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">        expect(painting1.slug).to eq(&quot;bobknob&quot;)</code>
+          
+          <code class="ruby">        dimensions: &quot;12 x 25&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        medium: &quot;cat hair&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        support: &quot;canvas&quot;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="59">
           
-          <code class="ruby">      it &quot;replaces &#39; - &#39; with an &#39;_&#39;&quot; do</code>
+          
+          <code class="ruby">        price: 5500,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="60">
           
-          <code class="ruby">        expect(painting2.slug).to eq(&quot;puppies_kittens&quot;)</code>
+          
+          <code class="ruby">        style: &quot;portrait&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">      end</code>
+          <code class="ruby">        status: &quot;for sale&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
+          <code class="ruby">      )</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;removes any other nonalphanumeric char, _, and &#39; &#39;&quot; do</code>
+          <code class="ruby">    describe &quot;creates slug from title&quot; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">        expect(painting3.slug).to eq(&quot;life_death_blood&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby">      end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby"></code>
+          <code class="ruby">      it &quot;downcases the title&quot; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">      it &quot;removes spaces and replaces with underscore&quot; do</code>
+          <code class="ruby">        expect(painting1.slug).to eq(&quot;bobknob&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        expect(painting4.slug).to eq(&quot;sex_and_drugs_and_rocknroll&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;replaces &#39; - &#39; with an &#39;_&#39;&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(painting2.slug).to eq(&quot;puppies_kittens&quot;)</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="72">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="73">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="74">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;removes any other nonalphanumeric char, _, and &#39; &#39;&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(painting3.slug).to eq(&quot;life_death_blood&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;removes spaces and replaces with underscore&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(painting4.slug).to eq(&quot;sex_and_drugs_and_rocknroll&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="84">
           
           
           <code class="ruby">end</code>
