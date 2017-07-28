@@ -41,6 +41,7 @@ gem 'stripe'
 gem 'rails_12factor', group: :production
 gem 'dotenv-rails'
 gem 'yarn', '~> 0.1.1'
+gem 'mailgun-ruby', '~>1.1.6'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
