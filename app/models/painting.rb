@@ -3,6 +3,7 @@ class Painting < ApplicationRecord
   validates :dimensions, :medium, :support, :price, :style, presence: true
   validates :title, presence: true, uniqueness: true
   has_many :order_items
+  
 
   has_attached_file :pclip_image,
       :styles => { :medium => "300x300>", :thumb => "100x100>" },
