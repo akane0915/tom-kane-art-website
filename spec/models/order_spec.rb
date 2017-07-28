@@ -1,6 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe Order, type: :model do
-  it { should belong_to :charge }
+  it { should have_one :charge }
 
 end
