@@ -43,6 +43,8 @@ class ChargesController < ApplicationController
   end
 
   def thanks
+    amount_to_be_charged
+    set_description
     session[:order_id] = nil
   end
 
