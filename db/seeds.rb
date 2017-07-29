@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Admin.create!({
+  email: "kinz@email.com",
+  password: "000000",
+  super_admin: true,
+})
+
 Painting.create!([
   { title: 'Cherry Blossoms With Wind',
     description: 'Frame Optional',

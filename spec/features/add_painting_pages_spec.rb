@@ -4,7 +4,7 @@ describe "the paintings pages" do
 
   before :each do
     admin = FactoryGirl.create(:admin)
-    painting = FactoryGirl.create(:painting)
+    @painting = FactoryGirl.create(:painting)
     visit new_admin_session_path
     fill_in "Email",  with: admin.email
     fill_in "Password", with: admin.password
@@ -47,5 +47,25 @@ describe "the paintings pages" do
     fill_in "Price", with: 555
     click_button "Create Painting"
     expect(page).to have_content 'error prohibited this painting from being saved'
+  end
+
+  it "goes through the editing painting process" do
+    visit edit_painting_path(@painting.id)
+    fill_in "Description", with: 'I wandered lonely as a cloud!!!!'
+    click_button "Update Painting"
+    expect(page).to have_content 'Painting was successfully updated'
+  end
+
+  it "goes through the unsuccessful editing painting process" do
+    visit edit_painting_path(@painting.id)
+    fill_in "Title", with: ''
+    click_button "Update Painting"
+    expect(page).to have_content 'error prohibited this painting from being saved'
+  end
+
+  it "goes through the delete a painting process" do
+    visit painting_path(@painting)
+    click_link 'Delete'
+    expect(page).to have_content 'Painting was successfully destroyed.'
   end
 end
