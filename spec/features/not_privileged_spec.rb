@@ -20,4 +20,10 @@ describe "the nonadmin testing" do
     expect(page).to have_content 'You need to sign in or sign up before continuing.'
   end
 
+  it "ensure non-super admin cannot create new admin" do
+    visit new_admin_path
+    expect(page.current_path).to eq new_admin_session_path
+    expect(page).to have_content 'Log in'
+  end
+
 end

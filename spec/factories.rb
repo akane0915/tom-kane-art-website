@@ -6,7 +6,13 @@ FactoryGirl.define do
     email 'tka@email.com'
     password "000000"
   end
-  
+
+  factory :super_admin, class: Admin do
+    email 'tka_admin@email.com'
+    password "000000"
+    super_admin true
+  end
+
   factory :painting do
     title 'Cherry Blossoms With Wind'
     description 'Frame Optional'

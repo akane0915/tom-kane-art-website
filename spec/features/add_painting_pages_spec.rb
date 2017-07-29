@@ -3,6 +3,7 @@ require 'rails_helper'
 describe "the paintings pages" do
 
   before :each do
+    Admin.destroy_all
     admin = FactoryGirl.create(:admin)
     @painting = FactoryGirl.create(:painting)
     visit new_admin_session_path
