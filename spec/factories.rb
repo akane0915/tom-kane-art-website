@@ -3,8 +3,10 @@ FactoryGirl.define do
 
   end
   factory :admin do
-
+    email 'tka@email.com'
+    password "000000"
   end
+  
   factory :painting do
     title 'Cherry Blossoms With Wind'
     description 'Frame Optional'

@@ -591,15 +591,15 @@
         1,
         null,
         1,
-        70,
+        78,
         0,
         null,
-        70,
+        78,
         null,
         null,
         null,
         1,
-        0,
+        1,
         null,
         null,
         1,
@@ -869,7 +869,7 @@
         null,
         null,
         1,
-        0,
+        2,
         null,
         null,
         null,
@@ -1087,7 +1087,7 @@
         1,
         null,
         1,
-        6,
+        7,
         null,
         null,
         1,
@@ -1101,12 +1101,12 @@
         null,
         1,
         1,
+        7,
         6,
-        5,
         null,
-        5,
-        5,
-        5,
+        6,
+        6,
+        6,
         null,
         null
       ],
@@ -1115,6 +1115,8 @@
         1,
         null,
         null,
+        1,
+        1,
         1,
         null,
         null,
@@ -1179,7 +1181,21 @@
         null
       ],
       "/Users/kinsey/Desktop/tom-kane-art-website/spec/features/add_painting_pages_spec.rb": [
-        1
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
       ],
       "/Users/kinsey/Desktop/tom-kane-art-website/spec/features/contact_pages_spec.rb": [
         1
@@ -1232,6 +1248,18 @@
         1,
         1,
         1,
+        null,
+        null
+      ],
+      "/Users/kinsey/Desktop/tom-kane-art-website/spec/features/nonadmin_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
         null,
         null
       ],
@@ -1417,6 +1445,6 @@
         null
       ]
     },
-    "timestamp": 1501285600
+    "timestamp": 1501295170
   }
 }
