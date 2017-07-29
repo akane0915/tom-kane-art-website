@@ -51,7 +51,7 @@
     <%= form.label :style %>
     <%= form.select :style, options_for_select([['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
   </div>
-  
+
   <div class="field form-group">
     <%= form.label :price %>
     <%= form.text_field :price, id: :painting_price, class: :"form-control", type: :number %>
@@ -59,9 +59,8 @@
 
   <div class="field form-group">
     <%= form.label :status %>
-    <%= form.select :status, options_for_select(['unavailable', 'available'])%>
+    <%= form.select :status, options_for_select(['Unavailable', 'Available'])%>
   </div>
-
 
 
     <%= form.label :pclip_image %>
