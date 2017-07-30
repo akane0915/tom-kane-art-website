@@ -6,31 +6,24 @@ class Painting < ApplicationRecord
   
 
   has_attached_file :pclip_image,
-      :styles => { :medium => "300x300>", :thumb => "100x100>" },
-      :url => ":s3_domain_url",
-      :path => 'paintings/:id/pclip_image/:style_:basename.:extension',
-      :storage => :s3,
-      :bucket => ENV['S3_BUCKET'],
-      :s3_credentials => {
-        :access_key_id => ENV['S3_KEY'],
-        :secret_access_key => ENV['S3_SECRET']
+      styles: { :medium => "300x300>", :thumb => "100x100>" },
+      url: ":s3_domain_url",
+      path: 'paintings/:id/pclip_image/:style_:basename.:extension',
+      storage: :s3,
+      s3_protocol: 'http',
+      s3_region: ENV["AWS_S3_REGION"],
+      s3_credentials: {
+        s3_host_name: ENV["AWS_S3_HOST_NAME"],
+        bucket: ENV["AWS_S3_BUCKET"],
+        access_key_id: ENV["AWS_ACCESS_KEY_ID"],
+        secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"]
       }
 
-  # validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/
   validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/
 
 
   before_create do
     self.slug = slug_it(self.title)
-  end
-
-  def s3_credentials
-    {
-      :bucket => ENV.fetch("S3_BUCKET_NAME"),
-      :access_key_id => ENV.fetch("AWS_ACCESS_KEY_ID"),
-      :secret_access_key => ENV.fetch("AWS_SECRET_ACCESS_KEY"),
-      :s3_region => ENV.fetch("AWS_REGION")
-    }
   end
 
   private
