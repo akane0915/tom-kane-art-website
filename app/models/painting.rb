@@ -1,9 +1,7 @@
 class Painting < ApplicationRecord
   has_many :order_items
-  validates :dimensions, :medium, :support, :price, :style, presence: true
+  validates :dimensions, :medium, :support, :price, :style, :status, presence: true
   validates :title, presence: true, uniqueness: true
-  has_many :order_items
-  
 
   has_attached_file :pclip_image,
       :styles => { :medium => "300x300>", :thumb => "100x100>" },
@@ -18,7 +16,6 @@ class Painting < ApplicationRecord
 
   # validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/
   validates_attachment_content_type :pclip_image, content_type: /\Aimage\/.*\z/
-
 
   before_create do
     self.slug = slug_it(self.title)

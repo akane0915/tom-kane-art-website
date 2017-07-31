@@ -5,9 +5,16 @@ describe Painting do
   it { should validate_presence_of :dimensions }
   it { should validate_presence_of :medium }
   it { should validate_presence_of :support }
+  # it { should validate_presence_of :framed }
   it { should validate_presence_of :price }
+  # it { should validate_presence_of :year }
   it { should validate_presence_of :style }
   it { should validate_uniqueness_of :title }
+  it { should validate_presence_of :status }
+
+  # it { should have_attached_file(:pclip_image_file_name) }
+  # it { should validate_attachment_presence(:pclip_image_file_name) }
+
 
   describe "#slug_it" do
     let(:painting1) {
@@ -18,6 +25,7 @@ describe Painting do
         support: "wood",
         price: 666.66,
         style: "square",
+        status: "for sale",
       )
     }
     let(:painting2) {
@@ -28,6 +36,7 @@ describe Painting do
         support: "canvas",
         price: 5500,
         style: "portrait",
+        status: "for sale",
       )
     }
     let(:painting3) {
@@ -38,6 +47,7 @@ describe Painting do
         support: "canvas",
         price: 5500,
         style: "portrait",
+        status: "for sale",
       )
     }
     let(:painting4) {
@@ -48,6 +58,7 @@ describe Painting do
         support: "canvas",
         price: 5500,
         style: "portrait",
+        status: "for sale",
       )
     }
 

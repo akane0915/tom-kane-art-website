@@ -37,7 +37,7 @@ describe "navigation from the Home page" do
     visit home_path
     find('#toggle').click
     click_link("Contact")
-    expect(page).to have_content "Contact Tom"
+    expect(page).to have_content "contact Tom"
   end
 
   it "navigates back to the gallery page" do
