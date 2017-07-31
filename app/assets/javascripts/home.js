@@ -7,12 +7,7 @@
       $('#overlay-navbar').toggleClass('open');
 
     });
-    // $('#nav-gallery').hover(function() {
-    //   $('#overlay-navbar').addClass('green');
-    // }, function() {
-    //   $('#overlay-navbar').removeClass('green');
-    // });
-
+    
     var currentPath = window.location.pathname;
 
     var detailPageLoad = function() {

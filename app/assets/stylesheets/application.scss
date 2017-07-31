@@ -190,10 +190,6 @@ $button-width: 35px;
         text-decoration: none;
         overflow: hidden;
 
-        &:hover{
-          color: green;
-        }
-
         &:hover:after,
          &:focus:after,
          &:active:after {
