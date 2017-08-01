@@ -2,15 +2,7 @@ class Order < ApplicationRecord
   has_many :order_items
   has_one :charge, dependent: :destroy
 
-  validates :order_items,
-    :charge,
-    :status,
-    :total_price,
-    :order_number,
-    :shipping,
-    :subtotal,
-    :tax,
-    presence: true
+  # validates :order_number, presence: true
 
   before_save :update_total
   before_save :generate_order_number
