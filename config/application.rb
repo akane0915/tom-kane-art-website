@@ -1,6 +1,6 @@
 require_relative 'boot'
 
-require 'action_mailer/railtie'
+# require 'action_mailer/railtie'
 
 require 'rails/all'
 
