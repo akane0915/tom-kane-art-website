@@ -93,5 +93,11 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   #Enabled for Devise
-  config.action_mailer.default_url_options = { host: 'https://tomkaneart.com' }
+  config.action_mailer.default_url_options = { host: 'http://www.tomkaneart.com' }
+
+  config.action_mailer.delivery_method = :mailgun
+  config.action_mailer.mailgun_settings = {
+    api_key: ENV.fetch('MAILGUN_API_KEY'),
+    domain: ENV.fetch('MAILGUN_DOMAIN'),
+  }
 end
