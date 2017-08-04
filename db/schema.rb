@@ -30,10 +30,6 @@ ActiveRecord::Schema.define(version: 20170804205749) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "super_admin", default: false
-    t.string "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
-    t.index ["confirmation_token"], name: "index_admins_on_confirmation_token", unique: true
     t.index ["email"], name: "index_admins_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
   end
