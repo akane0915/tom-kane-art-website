@@ -20,10 +20,13 @@ FactoryGirl.define do
     dimensions '11 x 14 inches'
     medium 'Acrylic'
     support 'Canvas'
-    framed 'false'
+    framed false
     price '1500'
     image 'https://images-na.ssl-images-amazon.com/images/I/31Dy9-24ulL._SY355_.jpg'
     style 'landscape'
-    status 'for sale'
+    status 'available'
   end
+
+
+
 end

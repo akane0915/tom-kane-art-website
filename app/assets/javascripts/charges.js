@@ -4,7 +4,7 @@ $(function(){
   $('#charge-form').submit(function(event) {
     var $form;
     $form = $(this);
-  debugger
+  
     $form.find('button').prop('disabled', true);
     Stripe.card.createToken($form, stripeResponseHandler);
     event.preventDefault();
