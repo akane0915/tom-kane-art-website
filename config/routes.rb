@@ -14,8 +14,8 @@ Rails.application.routes.draw do
   resource :cart, only: [:show]
 
   # consider resource when reworking
-  resources :contact, only: [:show, :index]
-  # get 'contact', to: 'messages#new', as: 'new_message'
+  # resources :contact, only: [:show, :index]
+  get 'contact', to: 'messages#new', as: 'new_message'
   post 'contact', to: 'messages#create', as: 'create_message'
 
   get 'thanks', to: 'charges#thanks', as: 'thanks'
