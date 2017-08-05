@@ -17,7 +17,6 @@ describe 'buy painting' do
     fill_in 'charge[zip]', with: '97000'
     fill_in 'charge[country]', with: 'USA'
     click_button 'Proceed to Payment'
-    # save_and_open_page
     expect(page).to have_content "Please Review Your Order"
   end
 
@@ -56,11 +55,12 @@ describe 'buy painting' do
     fill_in 'charge[zip]', with: '97000'
     fill_in 'charge[country]', with: 'USA'
     click_button 'Proceed to Payment'
-    fill_in 'number', with: '4242424242424242'
-    fill_in 'cvc', with: '123'
-    fill_in 'exp-month', with: '09'
-    fill_in 'exp-year', with: '18'
+    fill_in 'Card Number', with: '4242424242424242'
+    fill_in 'CVC', with: '123'
+    fill_in 'MM', with: '09'
+    fill_in 'YYYY', with: '18'
     click_button 'Place Your Order'
+    # binding.pry
     # save_and_open_page
     expect(page).to have_content "Thank you!"
   end

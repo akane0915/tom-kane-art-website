@@ -18,9 +18,11 @@
   #arrow {
     display: block;
     position: absolute;
-    bottom: 1vw;
-    width: 20vw;
     margin: 0 auto;
+    bottom: .5vw;
+    width: 20vw;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   #arrow:hover {

@@ -67,7 +67,7 @@ private
       :city,
       :state,
       :zip,
-      :country
+      :country,
     )
   end
 
