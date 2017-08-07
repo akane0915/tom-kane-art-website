@@ -25,14 +25,14 @@ class ChargesController < ApplicationController
 
   def submit
     customer = StripeTool.create_customer(
-      email: params[:email],
-      stripe_token: params[:stripeToken]
+      current_order.charge.email,
+      params[:stripeToken]
     )
 
     charge = StripeTool.create_charge(
-      customer_id: customer.id,
-      amount: @amount,
-      description: @description
+      customer.id,
+      @amount,
+      @description
     )
 
     redirect_to thanks_path
