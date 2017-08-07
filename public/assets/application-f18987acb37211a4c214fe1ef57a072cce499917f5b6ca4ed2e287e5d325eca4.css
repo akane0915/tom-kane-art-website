@@ -12719,7 +12719,7 @@ button.close {
 }
 /* line 194, /Users/Guest/Desktop/tom-kane-art-website/app/assets/stylesheets/application.scss */
 .overlay-navbar ul li a:hover {
-  color: green;
+  color: white;
 }
 /* line 198, /Users/Guest/Desktop/tom-kane-art-website/app/assets/stylesheets/application.scss */
 .overlay-navbar ul li a:hover:after, .overlay-navbar ul li a:focus:after, .overlay-navbar ul li a:active:after {
