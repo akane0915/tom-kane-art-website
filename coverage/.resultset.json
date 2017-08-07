@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/controllers/charges_controller_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/controllers/charges_controller_spec.rb": [
         1,
         null,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/rails_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -82,15 +82,17 @@
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/environment.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/application.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/application.rb": [
         1,
+        null,
+        null,
         null,
         1,
         null,
@@ -112,12 +114,12 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/boot.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/spring.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/spring.rb": [
         null,
         null,
         null,
@@ -125,7 +127,7 @@
         null,
         5
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/environments/test.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/environments/test.rb": [
         1,
         null,
         null,
@@ -169,7 +171,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/application_controller_renderer.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -177,7 +179,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/assets.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -193,7 +195,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/backtrace_silencers.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -202,14 +204,14 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/cookies_serializer.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/devise.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -489,13 +491,13 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/filter_parameter_logging.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/inflections.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -513,13 +515,18 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/mime_types.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/mailgun.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/stripe.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/stripe.rb": [
         1,
         null,
         null,
@@ -527,7 +534,7 @@
         null,
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/initializers/wrap_parameters.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -543,7 +550,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/config/routes.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/config/routes.rb": [
         1,
         null,
         1,
@@ -560,31 +567,31 @@
         1,
         null,
         null,
-        1,
-        null,
-        1,
-        null,
-        1,
         null,
         1,
         1,
         null,
-        null
-      ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/admin.rb": [
         1,
         null,
-        null,
+        1,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/application_record.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/admin.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/application_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -607,60 +614,60 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/application_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/about_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/about_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/charges_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/charges_helper.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/contact_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/contact_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/details_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/details_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/home_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/home_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/paintings_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/paintings_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/helpers/privacy_policy_helper.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/helpers/privacy_policy_helper.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/channels/application_cable/channel.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/channels/application_cable/channel.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/channels/application_cable/connection.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/channels/application_cable/connection.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/about_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/about_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/admins_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/admins_controller.rb": [
         1,
         1,
         9,
@@ -698,7 +705,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/carts_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/carts_controller.rb": [
         1,
         null,
         1,
@@ -707,7 +714,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/charges_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/charges_controller.rb": [
         1,
         1,
         1,
@@ -783,13 +790,13 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/contact_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/contact_controller.rb": [
         1,
         1,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/details_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/details_controller.rb": [
         1,
         1,
         6,
@@ -798,7 +805,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/home_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/home_controller.rb": [
         1,
         1,
         15,
@@ -806,10 +813,10 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/messages_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/messages_controller.rb": [
         1,
         1,
-        0,
+        3,
         null,
         null,
         1,
@@ -831,7 +838,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/order_items_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/order_items_controller.rb": [
         1,
         null,
         1,
@@ -857,7 +864,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/paintings_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/paintings_controller.rb": [
         1,
         1,
         1,
@@ -932,21 +939,21 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/controllers/privacy_policy_controller.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/controllers/privacy_policy_controller.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/jobs/application_job.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/jobs/application_job.rb": [
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/mailers/application_mailer.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/mailers/message_mailer.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/mailers/message_mailer.rb": [
         1,
         null,
         null,
@@ -956,12 +963,15 @@
         null,
         1,
         0,
+        0,
+        null,
+        null,
         null,
         0,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/charge.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/charge.rb": [
         1,
         1,
         null,
@@ -986,15 +996,8 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/concerns/stripe_tool.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/concerns/stripe_tool.rb": [
         1,
-        1,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         0,
         null,
@@ -1002,17 +1005,24 @@
         null,
         null,
         null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/message.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/message.rb": [
         1,
         1,
         1,
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/order.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/order.rb": [
         1,
         1,
         1,
@@ -1050,19 +1060,21 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/order_item.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/order_item.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/app/models/painting.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/app/models/painting.rb": [
         1,
         1,
         1,
         1,
         null,
         1,
+        null,
+        null,
         null,
         null,
         null,
@@ -1081,15 +1093,6 @@
         null,
         null,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        0,
-        null,
-        null,
-        1,
         1,
         22,
         21,
@@ -1100,7 +1103,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/factories.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/factories.rb": [
         1,
         1,
         null,
@@ -1134,7 +1137,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/about_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/about_pages_spec.rb": [
         1,
         null,
         1,
@@ -1179,7 +1182,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/add_painting_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/add_painting_pages_spec.rb": [
         1,
         null,
         1,
@@ -1253,7 +1256,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/add_to_cart_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/add_to_cart_pages_spec.rb": [
         1,
         null,
         1,
@@ -1276,7 +1279,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/admins_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/admins_spec.rb": [
         1,
         null,
         1,
@@ -1322,7 +1325,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/buy_painting_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/buy_painting_pages_spec.rb": [
         1,
         null,
         1,
@@ -1391,10 +1394,10 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/contact_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/contact_pages_spec.rb": [
         1
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/gallery_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/gallery_pages_spec.rb": [
         1,
         null,
         1,
@@ -1445,7 +1448,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/not_privileged_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/not_privileged_spec.rb": [
         1,
         null,
         1,
@@ -1476,7 +1479,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/orders_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/orders_spec.rb": [
         1,
         null,
         null,
@@ -1493,7 +1496,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/features/privacy_policy_pages_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/features/privacy_policy_pages_spec.rb": [
         1,
         null,
         1,
@@ -1538,7 +1541,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/helpers/charges_helper_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/helpers/charges_helper_spec.rb": [
         1,
         null,
         null,
@@ -1555,7 +1558,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/models/charge_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/models/charge_spec.rb": [
         1,
         null,
         1,
@@ -1574,7 +1577,7 @@
         null,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/models/order_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/models/order_spec.rb": [
         1,
         null,
         1,
@@ -1587,7 +1590,7 @@
         2,
         null
       ],
-      "/Users/gradyshelton/Desktop/tom-kane-art-website/spec/models/painting_spec.rb": [
+      "/Users/asiakane/Desktop/tom-kane-art-website/spec/models/painting_spec.rb": [
         1,
         null,
         1,
@@ -1674,6 +1677,6 @@
         null
       ]
     },
-    "timestamp": 1501553603
+    "timestamp": 1502137016
   }
 }
