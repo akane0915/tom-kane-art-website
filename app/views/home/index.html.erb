@@ -3,8 +3,8 @@
     <div id="overlay" class="masthead-text">
       <h1>Tom Kane</h1>
     </div>
+    <%= image_tag("down-arrow.png", :id => "arrow")%>
   </div>
-  <%= image_tag("down-arrow.png", :id => "arrow")%>
 </div>
 
 <p id="notice"><%= notice %></p>
@@ -14,7 +14,7 @@
   <% @paintings.each do |painting| %>
     <%= link_to detail_path(painting.slug) do %>
       <div class="black <%= painting.style %> slideanim">
-        <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.image ||= painting.pclip_image}" %>);">
+        <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.pclip_image.url(:gallery)}" %>);">
 
           <h3 class="painting-center-title"><%= painting.title %></h3>
         </div>
