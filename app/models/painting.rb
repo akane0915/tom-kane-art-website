@@ -4,7 +4,10 @@ class Painting < ApplicationRecord
   validates :title, presence: true, uniqueness: true
 
   has_attached_file :pclip_image,
-      styles: { :medium => "300x300>", :thumb => "100x100>" },
+      styles: {
+        :medium => "640x640>",
+        :gallery => ["900x900>", :jpg],
+        :thumb => "100x100>" },
       url: ":s3_domain_url",
       path: 'paintings/:id/pclip_image/:style_:basename.:extension',
       storage: :s3,
