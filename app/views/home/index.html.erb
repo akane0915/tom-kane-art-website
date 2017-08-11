@@ -14,7 +14,7 @@
   <% @paintings.each do |painting| %>
     <%= link_to detail_path(painting.slug) do %>
       <div class="black <%= painting.style %> slideanim">
-        <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.image ||= painting.pclip_image.url(:gallery)}" %>);">
+        <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.pclip_image.url(:gallery)}" %>);">
 
           <h3 class="painting-center-title"><%= painting.title %></h3>
         </div>
