@@ -32,7 +32,8 @@ class ChargesController < ApplicationController
     charge = StripeTool.create_charge(
       customer.id,
       @amount,
-      @description
+      @description,
+      current_order.charge.email
     )
 
     redirect_to thanks_path

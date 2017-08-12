@@ -6,12 +6,14 @@ module StripeTool
     )
   end
 
-  def self.create_charge(customer_id, amount, description)
+  def self.create_charge(customer_id, amount, description, customer_email)
+    binding.pry
     Stripe::Charge.create(
       customer: customer_id,
       amount: amount,
       description: description,
-      currency: 'usd'
+      currency: 'usd',
+      receipt_email: customer_email,
     )
   end
 end
