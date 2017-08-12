@@ -6,6 +6,7 @@ class Painting < ApplicationRecord
   has_attached_file :pclip_image,
       styles: {
         :medium => "640x640>",
+        :masthead => ["1800x1800", :jpg],
         :gallery => ["900x900>", :jpg],
         :thumb => "100x100>" },
       url: ":s3_domain_url",
