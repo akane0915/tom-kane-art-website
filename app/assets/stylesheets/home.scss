@@ -9,7 +9,7 @@
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  
   //
   // @media (min-width: 800px) {
   // }
@@ -167,4 +167,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media only screen 
+and (min-device-width : 1025px)
+{
+  .jumbotron {
+    background-attachment: fixed;
+  }
 }
