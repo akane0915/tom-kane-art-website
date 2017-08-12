@@ -7,7 +7,7 @@
       $('#overlay-navbar').toggleClass('open');
 
     });
-    
+
     var currentPath = window.location.pathname;
 
     var detailPageLoad = function() {
@@ -21,9 +21,9 @@
     }
 
     var galleryPageLoad = function() {
-      $('<img/>').attr('src', 'http://www.tomkaneart.com.s3.amazonaws.com/paintings/440367a1-8774-41a9-a131-4146d7e8e5cf/pclip_image/original_35040805720_3ff5b9f37e_o.png').on('load', function() {
+      $('<img/>').attr('src', 'http://www.tomkaneart.com.s3.amazonaws.com/paintings/440367a1-8774-41a9-a131-4146d7e8e5cf/pclip_image/masthead_35040805720_3ff5b9f37e_o.jpg').on('load', function() {
         $(this).remove();
-        $('.jumbotron').css('background-image', 'url(http://www.tomkaneart.com.s3.amazonaws.com/paintings/440367a1-8774-41a9-a131-4146d7e8e5cf/pclip_image/original_35040805720_3ff5b9f37e_o.png)').hide().fadeIn(3000);
+        $('.jumbotron').css('background-image', 'url(http://www.tomkaneart.com.s3.amazonaws.com/paintings/440367a1-8774-41a9-a131-4146d7e8e5cf/pclip_image/masthead_35040805720_3ff5b9f37e_o.jpg)').hide().fadeIn(3000);
         $('#overlay').fadeIn(5000);
         $('#arrow').hide().fadeIn(5000);
       });
