@@ -36,6 +36,12 @@ class ChargesController < ApplicationController
       current_order.charge.email
     )
 
+    current_order.order_items.each do |order_item|
+      painting_id = order_item.painting_id
+      painting = Painting.find(painting_id)
+      painting.update(status: "unavailable", price: 1000000)
+    end
+
     redirect_to thanks_path
 
   rescue Stripe::CardError => e
