@@ -5,8 +5,16 @@
 
     <h2><%= link_to "#{painting.title}", painting %></h2>
     <p><%= "Year: #{painting.year}" %></p>
-    <p>Price: <%= painting.price == 0 ? "Not for Sale" : number_to_currency(painting.price) %></p>
 
+    <p>Price:
+      <% if painting.price == 0 %>
+        Not for Sale
+      <% elsif painting.price == 1000000 %>
+        Sold
+      <% else %>
+        <%= number_to_currency(painting.price) %>
+      <% end %>
+    </p>
 
   <% end %>
   <br>

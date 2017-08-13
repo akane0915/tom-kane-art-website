@@ -39,8 +39,8 @@ class ChargesController < ApplicationController
     current_order.order_items.each do |order_item|
       painting_id = order_item.painting_id
       painting = Painting.find(painting_id)
-      painting.update(status: "unavailable")
-      binding.pry
+      amount_to_be_charged
+      painting.update(status: "unavailable", price: 1000000)
     end
 
     redirect_to thanks_path
@@ -51,7 +51,6 @@ class ChargesController < ApplicationController
   end
 
   def thanks
-    amount_to_be_charged
     set_description
     session[:order_id] = nil
   end

@@ -9,6 +9,8 @@
 
   <% if @painting.price == 0 %>
     <h3>Not for Sale</h3>
+  <% elsif @painting.price == 1000000 %>
+    <h3>Sold</h3>
   <% elsif !current_order.order_items.any? { |item| item.painting_id == @painting.id } %>
     <h3><%= number_to_currency(@painting.price) %></h3>
     <%= form_for @order_item do |f| %>
