@@ -11,6 +11,8 @@
   <p>Year: <%= @painting.year %></p>
   <p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
   <p>Style: <%= @painting.style %></p>
+  <p>Slug: <%= @painting.slug %></p>
+  <p>Status: <%= @painting.status %></p>
   <p>Image: <%= image_tag @painting.pclip_image.url(:original) %></p>
 
   <%= link_to 'Edit', edit_painting_path(@painting) %> |
