@@ -37,23 +37,6 @@ class Painting < ApplicationRecord
     self.slug = slug_it(self.title)
   end
 
-  STATUS_ORDERED = ['Available', 'sold', 'Unavailable']
-
-  # Returns a case statement for ordering by a particular set of strings
-  # Note that the SQL is built by hand and therefore injection is possible,
-  # however since we're declaring the priorities in a constant above it's
-  # safe.
-
-  def self.order_by_status
-    ret = "CASE"
-    STATUS_ORDERED.each_with_index do |p, i|
-      ret << " WHEN status = '#{p}' THEN #{i}"
-    end
-    ret << " END"
-  end
-
-  scope :by_status, -> { {order: order_by_status} }
-
   private
   def slug_it(title)
     return unless title

@@ -3,7 +3,7 @@ class PaintingsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @paintings = Painting.all.by_status
+    @paintings = Painting.all
   end
 
   def show

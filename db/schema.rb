@@ -66,7 +66,6 @@ ActiveRecord::Schema.define(version: 20170723223919) do
     t.decimal "tax", precision: 12, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.uuid "charge_id"
   end
 
   create_table "paintings", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
