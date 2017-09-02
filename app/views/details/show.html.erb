@@ -7,9 +7,9 @@
   <h3><%= @painting.dimensions %></h3>
   <h3><%= "#{@painting.medium} on #{@painting.support}" %></h3>
 
-  <% if @painting.price == 0 %>
+  <% if @painting.unavailable? %>
     <h3>Not for Sale</h3>
-  <% elsif @painting.price == 1000000 %>
+  <% elsif @painting.sold? %>
     <h3>Sold</h3>
   <% elsif !current_order.order_items.any? { |item| item.painting_id == @painting.id } %>
     <h3><%= number_to_currency(@painting.price) %></h3>
