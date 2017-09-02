@@ -39,14 +39,14 @@ class ChargesController < ApplicationController
     current_order.order_items.each do |order_item|
       painting_id = order_item.painting_id
       painting = Painting.find(painting_id)
-      painting.update(status: "unavailable", price: 1000000)
+      painting.update(status: "sold")
     end
 
     redirect_to thanks_path
 
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_back fallback_location: review_order_path(id: current_order.charge)
+    rescue Stripe::CardError => e
+      flash[:error] = e.message
+      redirect_back fallback_location: review_order_path(id: current_order.charge)
   end
 
   def thanks
