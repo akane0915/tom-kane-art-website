@@ -59,7 +59,7 @@
 
   <div class="field form-group">
     <%= form.label :status %>
-    <%= form.select :status, options_for_select([painting.status, 'Unavailable', 'Available'])%>
+    <%= form.select :status, options_for_select(Painting::STATUS)%>
   </div>
 
 
