@@ -1,4 +1,4 @@
-<%= form_with(model: painting, local: true) do |form| %>
+<%= form_for(@painting) do |form| %>
   <% if painting.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(painting.errors.count, "error") %> prohibited this painting from being saved:</h2>
@@ -42,14 +42,13 @@
   </div>
 
   <div class="field form-group">
-    <% #framed is a boolean and form needs to be changed to a boolean or dropdown %>
     <%= form.label :framed %>
-    <%= form.select :framed, options_for_select(['No', 'Yes'], [false, true]) %>
+    <%= form.select :framed, Painting::FRAMED.keys %>
   </div>
 
   <div class="field form-group">
     <%= form.label :style %>
-    <%= form.select :style, options_for_select([[painting.style, ''],['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
+    <%= form.select :style, Painting::STYLES.keys %>
   </div>
 
   <div class="field form-group">

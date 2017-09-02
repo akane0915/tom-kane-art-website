@@ -7,6 +7,17 @@ class Painting < ApplicationRecord
     hidden: 0,
   }
 
+  STYLES = {
+    landscape: 0,
+    portrait: 1,
+    square: 2,
+  }
+
+  FRAMED = {
+    false: false,
+    true: true,
+  }
+
   has_many :order_items
   validates :dimensions, :medium, :support, :price, :style, :status, presence: true
   validates :title, presence: true, uniqueness: true
