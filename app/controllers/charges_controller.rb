@@ -40,7 +40,7 @@ class ChargesController < ApplicationController
     current_order.order_items.each do |order_item|
       painting_id = order_item.painting_id
       painting = Painting.find(painting_id)
-      painting.update(status: "sold")
+      painting.update_attribute(:status, "sold")
     end
     redirect_to thanks_path
 
@@ -88,7 +88,4 @@ private
       :country,
     )
   end
-
-
-
 end

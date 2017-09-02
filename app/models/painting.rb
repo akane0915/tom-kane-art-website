@@ -1,7 +1,28 @@
 class Painting < ApplicationRecord
+
+  STATUS = {
+    available: 2,
+    unavailable: 3,
+    sold: 1,
+    hidden: 0,
+  }
+
+  STYLES = {
+    landscape: 0,
+    portrait: 1,
+    square: 2,
+  }
+
+  FRAMED = {
+    false: false,
+    true: true,
+  }
+
   has_many :order_items
   validates :dimensions, :medium, :support, :price, :style, :status, presence: true
   validates :title, presence: true, uniqueness: true
+
+  enum status: STATUS
 
   has_attached_file :pclip_image,
       styles: {
