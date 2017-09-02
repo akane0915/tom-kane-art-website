@@ -5,7 +5,7 @@ class PaintingsController < ApplicationController
   # GET /paintings
   # GET /paintings.json
   def index
-    @paintings = Painting.all
+    @paintings = Painting.all.by_status
   end
 
   # GET /paintings/1
