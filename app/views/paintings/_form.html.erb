@@ -49,7 +49,7 @@
 
   <div class="field form-group">
     <%= form.label :style %>
-    <%= form.select :style, options_for_select([['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
+    <%= form.select :style, options_for_select([[painting.style, ''],['Landscape', 'landscape'], ['Portrait', 'portrait'], ['Square', 'square']]) %>
   </div>
 
   <div class="field form-group">
@@ -59,7 +59,7 @@
 
   <div class="field form-group">
     <%= form.label :status %>
-    <%= form.select :status, options_for_select(['Unavailable', 'Available'])%>
+    <%= form.select :status, options_for_select([painting.status, 'Unavailable', 'Available'])%>
   </div>
 
 

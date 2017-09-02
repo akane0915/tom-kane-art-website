@@ -7,9 +7,12 @@
   width: 100%;
   background-size: cover;
   position: relative;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  
+  //
+  // @media (min-width: 800px) {
+  // }
 
   #overlay {
     display: none;
@@ -19,7 +22,7 @@
     display: block;
     position: absolute;
     margin: 0 auto;
-    bottom: .5vw;
+    bottom: 0.5vw;
     width: 20vw;
     left: 50%;
     transform: translateX(-50%);
@@ -164,4 +167,12 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media only screen 
+and (min-device-width : 1025px)
+{
+  .jumbotron {
+    background-attachment: fixed;
+  }
 }

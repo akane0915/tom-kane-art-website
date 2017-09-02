@@ -9,9 +9,19 @@
   <p>Framed: <%= @painting.framed %></p>
   <p>Dimensions: <%= @painting.dimensions %></p>
   <p>Year: <%= @painting.year %></p>
-  <p>Price: <%= @painting.price == 0 ? "Not for Sale" : number_to_currency(@painting.price) %></p>
+  <p>Price:
+    <% if @painting.price == 0 %>
+      Not for Sale
+    <% elsif @painting.price == 1000000 %>
+      Sold
+    <% else %>
+      <%= number_to_currency(@painting.price) %>
+    <% end %>
+  </p>
   <p>Style: <%= @painting.style %></p>
-  <p>Image: <%= image_tag @painting.pclip_image.url(:original) %></p>
+  <p>Slug: <%= @painting.slug %></p>
+  <p>Status: <%= @painting.status %></p>
+  <p>Image: <%= image_tag @painting.pclip_image.url(:gallery) %></p>
 
   <%= link_to 'Edit', edit_painting_path(@painting) %> |
   <%= link_to 'Delete', @painting, method: :delete, data: { confirm: 'Are you sure?' } %> |
