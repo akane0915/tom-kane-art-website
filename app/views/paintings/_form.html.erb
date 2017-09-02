@@ -59,11 +59,11 @@
 
   <div class="field form-group">
     <%= form.label :status %>
-    <%= form.select :status, options_for_select(Painting::STATUS)%>
+    <%= form.select :status, Painting::STATUS.keys %>
   </div>
 
 
-    <%= form.label :pclip_image %>
+    <%= form.label "Painting Image" %>
       <%= form.file_field :pclip_image, id: :painting_image, class: :"form-control" %>
 
 
