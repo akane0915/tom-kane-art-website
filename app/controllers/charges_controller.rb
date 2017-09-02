@@ -1,5 +1,6 @@
 class ChargesController < ApplicationController
   before_action :amount_to_be_charged
+  before_action :set_item_names
   before_action :set_description
 
   def new
@@ -41,12 +42,11 @@ class ChargesController < ApplicationController
       painting = Painting.find(painting_id)
       painting.update_attribute(:status, "sold")
     end
-
     redirect_to thanks_path
 
-  rescue Stripe::CardError => e
-    flash[:error] = e.message
-    redirect_back fallback_location: review_order_path(id: current_order.charge)
+    rescue Stripe::CardError => e
+      flash[:error] = e.message
+      redirect_back fallback_location: review_order_path(id: current_order.charge)
   end
 
   def thanks
@@ -60,8 +60,17 @@ private
     @amount = (current_order.calculate_total * 100).to_i
   end
 
+  def set_item_names
+    @painting_names = []
+    current_order.order_items.each do |order_item|
+      painting = Painting.find(order_item.painting_id)
+      @painting_names.push(" " + painting.title)
+    end
+    return @painting_names
+  end
+
   def set_description
-    @description = current_order.order_number
+    @description = "#{current_order.order_number}- Painting(s): #{@painting_names}"
   end
 
   def charge_params
@@ -77,5 +86,4 @@ private
       :country,
     )
   end
-
 end
