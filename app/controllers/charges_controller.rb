@@ -61,16 +61,18 @@ private
   end
 
   def set_item_names
-    @painting_names = []
+    painting_names = []
     current_order.order_items.each do |order_item|
       painting = Painting.find(order_item.painting_id)
-      @painting_names.push(" " + painting.title)
+      painting_names.push(painting.title)
+      @string_painting_names = @painting_names.join(", ")
+
     end
     return @painting_names
   end
 
   def set_description
-    @description = "#{current_order.order_number}- Painting(s): #{@painting_names}"
+    @description = "#{current_order.order_number}- Painting(s): #{@string_painting_names}"
   end
 
   def charge_params
