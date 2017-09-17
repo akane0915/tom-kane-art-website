@@ -1,6 +1,5 @@
 class ChargesController < ApplicationController
   before_action :amount_to_be_charged
-  before_action :set_item_names
   before_action :set_description
 
   def new
@@ -65,14 +64,12 @@ private
     current_order.order_items.each do |order_item|
       painting = Painting.find(order_item.painting_id)
       painting_names.push(painting.title)
-      @string_painting_names = painting_names.join(", ")
-
     end
-    return @string_painting_names
+    painting_names.join(", ")
   end
 
   def set_description
-    @description = "#{current_order.order_number}- Painting(s): #{@string_painting_names}"
+    @description = "#{current_order.order_number}- Painting(s): #{set_item_names}"
   end
 
   def charge_params

@@ -33,7 +33,7 @@ class Painting < ApplicationRecord
       url: ":s3_domain_url",
       path: 'paintings/:id/pclip_image/:style_:basename.:extension',
       storage: :s3,
-      s3_protocol: 'http',
+      s3_protocol: 'https',
       s3_region: ENV["AWS_S3_REGION"],
       s3_credentials: {
         s3_host_name: ENV["AWS_S3_HOST_NAME"],
