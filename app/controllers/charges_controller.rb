@@ -41,6 +41,9 @@ class ChargesController < ApplicationController
       painting = Painting.find(painting_id)
       painting.update_attribute(:status, "sold")
     end
+
+    MessageMailer.contact(sold_message).deliver_now
+
     redirect_to thanks_path
 
     rescue Stripe::CardError => e
@@ -69,7 +72,32 @@ private
   end
 
   def set_description
-    @description = "#{current_order.order_number}- Painting(s): #{set_item_names}"
+    @description = "#{current_order.order_number} - #{'Painting'.pluralize(current_order.order_items.count)}: #{set_item_names}"
+  end
+
+  def sold_message
+    Message.new(
+      name: "TomKaneArt.com",
+      email: "sold@tomkaneart.com",
+      subject: "Order Number: #{current_order.order_number}",
+      body: <<~MESSAGE
+        You sold a painting!
+        
+        #{'Painting'.pluralize(current_order.order_items.count)}: #{set_item_names}
+        Order Total: #{current_order.total_price}
+
+        Customer Details:
+
+        #{current_order.charge.name}
+        #{current_order.charge.email}
+        #{current_order.charge.phone}
+        #{current_order.charge.address1}
+        #{current_order.charge.address2}
+        #{current_order.charge.city}, #{current_order.charge.state} #{current_order.charge.zip}
+        #{current_order.charge.country}
+
+      MESSAGE
+    )
   end
 
   def charge_params
