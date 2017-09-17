@@ -60,15 +60,15 @@ private
     @amount = (current_order.calculate_total * 100).to_i
   end
 
-  def set_item_names
+  def Self.set_item_names
     painting_names = []
     current_order.order_items.each do |order_item|
       painting = Painting.find(order_item.painting_id)
       painting_names.push(painting.title)
-      @string_painting_names = @painting_names.join(", ")
+      @string_painting_names = painting_names.join(", ")
 
     end
-    return @painting_names
+    return @string_painting_names
   end
 
   def set_description
