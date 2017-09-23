@@ -18,7 +18,7 @@
       <% @order.order_items.each do |item| %>
         <h5><%= "#{item.painting.title}, #{number_to_currency item.painting.price}" %></h5>
       <% end %>
-      <h5>Shipping, <%= "$#{Order::SHIPPING_FEE}"%></h5>
+      <h5>Shipping, <%= number_to_currency(Order::SHIPPING_FEE) %></h5>
       <hr>
       <h4><%= "Total #{number_to_currency @order.total_price}" %></h4>
     </div>

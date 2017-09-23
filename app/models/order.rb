@@ -1,5 +1,5 @@
 class Order < ApplicationRecord
-  SHIPPING_FEE = 50
+  SHIPPING_FEE = Configuration.first.shipping_fee
 
   has_many :order_items
   has_one :charge, dependent: :destroy
