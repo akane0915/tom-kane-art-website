@@ -1,0 +1,22 @@
+<%= form_for(@config) do |form| %>
+  <% if @config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@config.errors.count, "error") %> prohibited this from being saved:</h2>
+
+      <ul>
+      <% @config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :shipping_fee %>
+    <%= form.text_field :shipping_fee, class: :"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class: :"btn btn-default" %>
+  </div>
+<% end %>

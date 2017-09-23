@@ -4,6 +4,7 @@ class PaintingsController < ApplicationController
 
   def index
     @paintings = Painting.all
+    @config = DefaultConfiguration.first_or_create
   end
 
   def show

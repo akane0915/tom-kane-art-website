@@ -18,6 +18,7 @@ class ChargesController < ApplicationController
   end
 
   def review
+    @config = DefaultConfiguration.first
     @charge = Charge.find(params[:id])
     @order = @charge.order
     render :review_order

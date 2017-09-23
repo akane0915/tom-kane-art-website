@@ -1,4 +1,7 @@
 FactoryGirl.define do
+  factory :configuration do
+    
+  end
   factory :charge do
 
   end
