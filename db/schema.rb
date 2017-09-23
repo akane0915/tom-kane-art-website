@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20170923070236) do
     t.uuid "order_id", null: false
   end
 
-  create_table "configurations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+  create_table "default_configurations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.decimal "shipping_fee", precision: 12, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

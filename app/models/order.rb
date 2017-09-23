@@ -1,6 +1,4 @@
 class Order < ApplicationRecord
-  SHIPPING_FEE = Configuration.first.shipping_fee
-
   has_many :order_items
   has_one :charge, dependent: :destroy
 
@@ -9,7 +7,7 @@ class Order < ApplicationRecord
 
   def calculate_total
     paintings_price = self.order_items.collect { |item| item.painting.price }.sum
-    paintings_price + SHIPPING_FEE
+    paintings_price + DefaultConfiguration.first.shipping_fee
   end
 
 private

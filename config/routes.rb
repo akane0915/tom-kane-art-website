@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :details, only: [:show]
   resources :order_items
   resources :charges, only: [:new, :create]
+  resources :default_configurations, only: [:edit, :update]
 
   resource :cart, only: [:show]
 
