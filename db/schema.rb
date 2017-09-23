@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170723223919) do
+ActiveRecord::Schema.define(version: 20170923070236) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,12 @@ ActiveRecord::Schema.define(version: 20170723223919) do
     t.uuid "order_id", null: false
   end
 
+  create_table "configurations", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.decimal "shipping_fee", precision: 12, scale: 2
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "order_items", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.integer "quantity"
     t.uuid "painting_id"
@@ -66,6 +72,7 @@ ActiveRecord::Schema.define(version: 20170723223919) do
     t.decimal "tax", precision: 12, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.uuid "charge_id"
   end
 
   create_table "paintings", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
