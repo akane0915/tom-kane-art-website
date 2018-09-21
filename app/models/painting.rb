@@ -1,7 +1,28 @@
 class Painting < ApplicationRecord
+
+  STATUS = {
+    available: 2,
+    unavailable: 3,
+    sold: 1,
+    hidden: 0,
+  }
+
+  STYLES = {
+    landscape: 0,
+    portrait: 1,
+    square: 2,
+  }
+
+  FRAMED = {
+    false: false,
+    true: true,
+  }
+
   has_many :order_items
   validates :dimensions, :medium, :support, :price, :style, :status, presence: true
   validates :title, presence: true, uniqueness: true
+
+  enum status: STATUS
 
   has_attached_file :pclip_image,
       styles: {
@@ -12,7 +33,7 @@ class Painting < ApplicationRecord
       url: ":s3_domain_url",
       path: 'paintings/:id/pclip_image/:style_:basename.:extension',
       storage: :s3,
-      s3_protocol: 'http',
+      s3_protocol: 'https',
       s3_region: ENV["AWS_S3_REGION"],
       s3_credentials: {
         s3_host_name: ENV["AWS_S3_HOST_NAME"],

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :details, only: [:show]
   resources :order_items
   resources :charges, only: [:new, :create]
+  resources :default_configurations, only: [:edit, :update]
 
   resource :cart, only: [:show]
 
@@ -23,4 +24,7 @@ Rails.application.routes.draw do
   get 'charges/review', to: 'charges#review', as: 'review_order'
   post 'charges/review', to: 'charges#submit', as: 'submit_order'
 
+  if Rails.env.production?
+    get '404', to: 'home#unknown'
+  end
 end

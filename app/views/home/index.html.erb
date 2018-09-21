@@ -11,7 +11,8 @@
 
 <div class="gallery grid effect-2" id="grid">
 
-  <% @paintings.each do |painting| %>
+<% @paintings.each do |painting| %>
+  <% if painting.status == "available" %>
     <%= link_to detail_path(painting.slug) do %>
       <div class="black <%= painting.style %> slideanim">
         <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.pclip_image.url(:gallery)}" %>);">
@@ -21,4 +22,18 @@
       </div>
     <% end %>
   <% end %>
+<% end %>
+
+<% @paintings.each do |painting| %>
+  <% if painting.status == "unavailable" || painting.status == "sold" %>
+    <%= link_to detail_path(painting.slug) do %>
+      <div class="black <%= painting.style %> slideanim">
+        <div class="image-container <%= painting.style %>" style="background-image: url(<%= "#{painting.pclip_image.url(:gallery)}" %>);">
+
+          <h3 class="painting-center-title"><%= painting.title %></h3>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+<% end %>
 </div>
