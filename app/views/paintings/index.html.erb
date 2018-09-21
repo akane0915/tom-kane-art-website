@@ -13,6 +13,8 @@
         Not for Sale
       <% elsif painting.price == 1000000 %>
         Sold
+      <% elsif painting.price == -1 %>
+        Price on request
       <% else %>
         <%= number_to_currency(painting.price) %>
       <% end %>
