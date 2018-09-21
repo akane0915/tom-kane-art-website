@@ -9,6 +9,8 @@
 
   <% if @painting.price == 0 %>
     <h3>Not for Sale</h3>
+  <% elsif @painting.price == -1 %>
+    <h3>Price on request</h3>
   <% elsif @painting.price == 1000000 %>
     <h3>Sold</h3>
   <% elsif !current_order.order_items.any? { |item| item.painting_id == @painting.id } %>
