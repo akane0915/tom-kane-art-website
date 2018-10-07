@@ -6,21 +6,6 @@
   margin-top: 0;
 }
 
-.quote-section {
-  text-align: center;
-  margin: 50px 0 70px 0;
-  font-weight: bolder;
-}
-#quote{
-  font-size: 2em;
-  font-style: italic;
-  letter-spacing: .1em;
-}
-
-#tom {
-  font-size: 1.2em;
-}
-
 #about-image {
   display: block;
   margin: 0 auto;
@@ -39,9 +24,10 @@
   letter-spacing: .05em;
 }
 
-#about-page #painters-note-title {
-  margin-top: 80px;
-}
+.border-line {
+  border-bottom: #000 1px solid;
+  margin-top: 32px;
+  width: 20%;
 
 .cheers-signature {
   margin-top: 20px;
