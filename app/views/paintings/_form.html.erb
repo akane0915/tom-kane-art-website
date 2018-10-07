@@ -17,6 +17,11 @@
   </div>
 
   <div class="field form-group">
+    <%= form.label :index_for_ordering_paintings %>
+    <%= form.text_field :index_override, id: :painting_index_override, class: :"form-control", type: :number %>
+  </div>
+
+  <div class="field form-group">
     <%= form.label :year %>
     <%= form.text_field :year, id: :painting_year, class: :"form-control", type: :number %>
   </div>
