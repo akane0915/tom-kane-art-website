@@ -12,7 +12,7 @@
   <p>Year: <%= @painting.year %></p>
   <p>Price:
     <% if @painting.price == 0 %>
-      Not for Sale
+      Sold
     <% elsif @painting.price == 1000000 %>
       Sold
     <% elsif @painting.price == -1 %>
