@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @paintings = Painting.all
+    @paintings = Painting.order(:index_override)
     render :index
   end
 

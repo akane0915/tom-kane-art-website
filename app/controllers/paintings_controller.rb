@@ -3,7 +3,7 @@ class PaintingsController < ApplicationController
   before_action :authenticate_admin!
 
   def index
-    @paintings = Painting.all
+    @paintings = Painting.order(:index_override)
     @config = DefaultConfiguration.first_or_create
   end
 
@@ -57,6 +57,6 @@ class PaintingsController < ApplicationController
     end
 
     def painting_params
-      params.require(:painting).permit(:title, :description, :year, :dimensions, :medium, :support, :status, :framed, :price, :image, :style, :pclip_image)
+      params.require(:painting).permit(:title, :description, :year, :dimensions, :medium, :support, :status, :framed, :price, :image, :style, :pclip_image, :index_override)
     end
 end

@@ -19,7 +19,7 @@ class Painting < ApplicationRecord
   }
 
   has_many :order_items
-  validates :dimensions, :medium, :support, :price, :style, :status, presence: true
+  validates :dimensions, :medium, :support, :price, :style, :status, :index_override, presence: true
   validates :title, presence: true, uniqueness: true
 
   enum status: STATUS
