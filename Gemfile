@@ -32,7 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Project specific gems
 gem 'font-awesome-sass',  '~> 4.7.0'
-gem 'bootstrap-sass', '~> 3.3.6'
+gem 'bootstrap-sass', '~> 3.4.1'
 gem 'autoprefixer-rails'
 gem 'paperclip', '~> 5.0.0'
 gem 'aws-sdk', '~> 2.3'
